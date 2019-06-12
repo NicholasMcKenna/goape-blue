@@ -1,0 +1,1015 @@
+@import "custom";
+#eventPage #selectSeatsTab.selected {
+    color: white;
+    background-image: none;
+    background-color: #0064ff;
+}
+
+#eventPage .infoSection {
+    position: relative;
+    margin-bottom: 6px;
+    @media @desktop {
+        margin-top: -45px !important;
+    }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        margin-top: -15px !important;
+     }
+}
+
+#eventPage #content>div#ticketsPane .selectTickets h3+.numOfTickets.zero {
+    color: white;
+    background: @light-blue !important;
+    border-bottom: solid @light-blue;
+    font-size: 20px;
+    bottom: 4px;
+    padding-bottom: 1em;
+    width: 40%;
+    color: @main-font-color !important;
+    border-radius: 0;
+    .font-sheldon();
+}
+
+#selectedAreaInfo .button-moreAreas {
+    color: white;
+    background-color: @button-color;
+}
+
+#eventPage .tabsWrapper #baTab {
+    background-image: none;
+}
+
+#selectedAreaTitle {
+    display: none !important;
+}
+
+#eventPage.seated #leftPane,
+#eventPage.non-seated #leftPane {
+    padding-top: 0;
+}
+
+//TODO: Check on lateset version if needed
+#eventPage.non-seated .selectTickets .tickets,
+#eventPage.non-seated .selectTickets .summary {
+    border-color: @yellow;
+    border-width: 0;
+    @media only screen and (min-width: 1px) and (max-width: 780px) {
+        margin-left: 0px;
+    }
+}
+
+#eventPage .tabsWrapper>div.right {
+    background-image: none;
+    background-color: transparent;
+}
+
+#eventPage .tabsWrapper>div.center {
+    background-image: none;
+    background-color: transparent;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+#eventPage .tabsWrapper {
+    border-left: 0;
+}
+
+#eventPage.seated .selectTickets {
+    background-image: none;
+}
+
+#eventPage.non-seated #leftPane {
+    background: none;
+    padding-bottom: 0;
+}
+
+#eventPage.seated #leftPane,
+#eventPage.non-seated #leftPane {
+    background: none;
+    border-top: 1px solid #cccccc;
+}
+
+.expandable#selectedAreaInfo .selected {
+    border: none;
+}
+
+.seat.o {
+    background-color: #cccccc !important;
+}
+
+.seat.a,
+.seat.o,
+.seat.c {
+    background-image: none;
+    border-radius: 50%;
+}
+
+div#leftPane {
+    padding-top: 0;
+}
+
+#selPriceLevel-menu .ui-menu-item .info {
+    @media only screen and (min-width: 1px) and (max-width: 780px) {
+        margin-top: 11px;
+    }
+}
+
+#selPriceLevel-menu .ui-menu-item.ui-state-focus,
+#selPriceLevel-menu .ui-menu-item.selectedPriceLevel {
+    @media only screen and (min-width: 1px) and (max-width: 780px) {
+        background: transparent;
+    }
+}
+
+#selPriceLevel-menu {
+    @media only screen and (min-width: 1px) and (max-width: 780px) {
+        background: transparent;
+    }
+}
+
+form.promoBox {
+    max-width: 39% !important;
+}
+
+//Remove seating colours for GA events
+.non-seated span.pricelevel-image-container,
+#selectedAreaInfo .button-moreDetails {
+    display: none;
+}
+
+#eventPage .tabsWrapper #baTab.selected {
+    background-color: #0064ff;
+    background-image: none;
+}
+
+#eventPage.seated #ticketsPane {
+    width: 190px;
+}
+
+.seat.o {
+    background-color: #cecece !important;
+}
+
+.seat_plan_body_css {
+    background-color: white;
+}
+
+#eventPage .seatingPlanContainer {
+    background-color: white;
+}
+
+#eventPage .infoSection {
+    margin-bottom: 27px;
+}
+
+#selectedAreaInfo .button-moreAreas {
+    @media @desktop {
+        bottom: -58%;
+        max-width: 9em;
+        padding: 14px;
+    }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 1px) {
+    #eventPage {
+        #selectSeatsTab.selected,
+        .tabsWrapper #baTab,
+        .tabsWrapper #baTab.selected,
+        #selectSeatsTab {
+            background-image: none;
+        }
+        .infoSection .imageContainer img {
+            display: none;
+        }
+        .socialLinks {
+            display: none;
+        }
+        span.pricelevel-image-container {
+            padding: 10px;
+        }
+        .seat_plan_body_css #seats .seat,
+        .selectTickets .row div.priceLevels,
+        .priceLevelImages .seat,
+        .priceLevelInfo span.seat,
+        #selPriceLevel-menu span.seat {
+            border-radius: 50% 50% 50% 50%;
+        }
+        .promoBox:before {
+            content: none;
+        }
+        #selectedAreaInfo .button-moreAreas {
+            width: 123px;
+        }
+        #selectedAreaInfo .selected .area-info-container {
+            padding-right: 123px;
+        }
+        #content>div#ticketsPane .selectTickets h3+.numOfTickets.zero,
+        #selectSeatsTab.selected,
+        .tabsWrapper #baTab.selected,
+        #selectedAreaInfo .button-moreAreas {
+            background: @button-color;
+            border-bottom: none;
+        }
+        form.promoBox {
+            display: none;
+        }
+        .date {
+            position: unset;
+            right: 0;
+            font-size: 18px;
+            top: 6px;
+            border: none;
+            padding: 2px;
+            color: @main-font-color;
+        }
+        .infoSection {
+            position: relative;
+            margin-bottom: 6px;
+        }
+        .infoSection .name {
+            font-size: 1.2em;
+            padding-right: 6.5em;
+        }
+        #eventPage .infoSection .name {
+            font-size: 1em;
+            width: calc(100% - 8em) !important;
+        }
+        #HelpDeskRequestPanel {
+            display: none;
+        }
+        .tabsWrapper {
+            width: 100%;
+            margin-top: 0;
+        }
+        label#selectedAreaTitle {
+            display: none !important;
+        }
+        .tabsWrapper>div.center {
+            background-image: none;
+            padding-top: 0;
+            padding-left: 0;
+            height: 32px;
+        }
+        #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages {
+            width: 100%;
+        }
+        #selectedAreaInfo {
+            border: 0;
+            background-color: transparent;
+            padding-top: 10px;
+        }
+        #selectedAreaInfo .area-info-container>.name {
+            font-size: 1em;
+            font-weight: normal;
+        }
+        .infoSection {
+            padding-top: 0;
+        }
+        #selectedAreaInfo .button-moreAreas {
+            width: 85px;
+            height: auto;
+        }
+        #selectedAreaInfo .selected .area-info-container .availSeats {
+            font-size: 1rem;
+        }
+        #positionButtonDiv {
+            top: -27px;
+            right: 0;
+            border: 1px solid;
+        }
+    }
+    .ph_tunnellocation {
+        padding-top: 0px;
+    }
+    #eventPage.seated #hallMap>.magnify,
+    #eventPage.non-seated #hallMap>.magnify {
+        font-size: 1rem;
+        bottom: -46px;
+        padding-right: 19px;
+    }
+    #eventPage.non-seated #hallMap>.magnify {
+        bottom: -141px;
+    }
+    #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages {
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    #eventPage.seated #content>div {
+        padding-bottom: 14px;
+    }
+    .expanded#selectedAreaInfo .menu {
+        color: black;
+    }
+    #eventPage .selectTickets .summary>SPAN.total {
+        padding-right: 20px;
+    }
+    body.screen-Event4_aspx .ph_event_page #ticketsPane .selectTickets.mode-GeneralAdmission h4 {
+        margin-bottom: 60px;
+    }
+    #eventPage.non-seated #ticketsPane .ui-selectmenu-menu {
+        top: 53px !important;
+    }
+    #eventPage.hallMap #selectedAreaInfo {
+        border-top: 1px solid;
+        padding-top: 10px;
+    }
+    #eventPage #availableOperations .operationTypeContainer.selected LABEL {
+        color: white;
+        background-color: @button-color;
+    }
+    #eventPage #availableOperationTitle {
+        padding-bottom: 8px;
+    }
+    #eventPage.seated #content>div {
+        padding-top: 0;
+    }
+    body.screen-Event4_aspx .ph_event_page #ticketsPane .selectTickets.mode-GeneralAdmission h4 {
+        margin-bottom: 36px;
+        margin-top: 11px;
+        text-align: left;
+        color: @main-font-color;
+    }
+    #eventPage #selectedAreaInfo .selected .area-info-container {
+        padding-right: 0;
+    }
+    #eventPage.seated #leftPane,
+    #eventPage.non-seated #leftPane {
+        padding-bottom: 0;
+    }
+    div#descriptionPrice {
+        display: none;
+    }
+    #eventPage #selectedAreaInfo .area-info-container>.name {
+        font-size: 0.7em;
+    }
+    #eventPage.non-seated .selectTickets .tickets,
+    #eventPage.non-seated .selectTickets .summary {
+        width: 100%;
+    }
+    #eventPage .mode-GeneralAdmission .selectTickets .summary>SPAN.total {
+        padding-right: 11px;
+    }
+    .seat.o {
+        background-color: #80808085 !important;
+    }
+    #eventPage .infoSection {
+        padding-top: 17px;
+    }
+    #eventPage .date {
+        top: 24px;
+    }
+    .seat_plan_body_css div.label {
+        font-size: 54%;
+    }
+}
+
+.small_button_a.proceed {
+    background: none;
+    border-bottom: none;
+    box-shadow: none;
+    transition: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    #eventPage .timer {
+        top: -32px;
+    }
+}
+
+.selectTickets .row div.priceLevels,
+.priceLevelImages .seat,
+.priceLevelInfo span.seat,
+#selPriceLevel-menu span.seat {
+    background-image: none;
+}
+
+.imageContainer {
+    display: none;
+}
+
+#leftPane>*:not(#hallMap) {
+    margin-bottom: 1px;
+}
+
+#ctl00_body_SelectTickets_Container>h4 {
+    margin-top: 0;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ui-widget {
+    font-size: 2rem;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    background: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    background: none;
+}
+
+.selectTickets .row .price,
+.selectTickets .row .ops,
+.selectTickets .row .extra-info {
+    margin-top: 7px !important;
+    margin-bottom: -12px;
+}
+
+div#PH_Event_page {
+    max-width: 1444px;
+    margin: auto;
+}
+
+div#PH_TunnelLocation {
+    visibility: hidden;
+}
+
+#eventPage.seated #leftPane,
+#eventPage.non-seated #leftPane {
+    border: 0;
+    padding-left: 0;
+}
+
+#eventPage.non-seated #ticketsPane {
+    border: 0;
+}
+
+#eventPage .infoSection .name {
+    font-size: 40px;
+    color: #114432;
+}
+
+#eventPage #content #instructions {
+    display: none !important;
+}
+
+#eventPage.non-seated #ticketsPane>* {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.selectTickets .tickets>.row {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.selectTickets .row .priceType {
+    margin-left: 0;
+}
+
+.selectTickets .tickets>.row {
+    float: left;
+}
+
+.socialLinks {
+    display: none;
+}
+
+.infoSection .name {
+    font-weight: normal;
+}
+
+#eventPage .infoSection {
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.date {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: @main-font-color;
+}
+
+#eventPage .infoSection .date div {
+    font-size: 1em;
+}
+
+.location {
+    padding-top: 3px;
+    font-weight: normal;
+    border-bottom: 1px solid;
+    padding-bottom: 19px;
+    font-size: 18px;
+}
+
+div#selectedAreaInfo {
+    display: none;
+}
+
+#ctl00_body_SelectTickets_Container>h4 {
+    margin-top: 0;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    color: @main-font-color;
+}
+
+span.countTickets {
+    display: none !important;
+}
+
+.selectTickets .row .ops .count {
+    @media @desktop {
+        width: 1.5em;
+    }
+    @media @mobile {
+        margin-top: 3px;
+    }
+}
+
+#eventPage.non-seated #ticketsPane>* {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+}
+
+#eventPage .selectTickets .summary {
+    padding: 1em 0;
+}
+
+@media @desktop {
+    #eventPage .infoSection .date div {
+        font-size: 1.2em;
+    }
+    .preConfirmationMessage {
+        font-size: 14px;
+    }
+    .selectTickets .tickets>.row {
+        width: 50%;
+        padding-right: 0;
+    }
+    .selectTickets .operationTypeTitle {
+        display: none;
+    }
+}
+
+.availSeats {
+    display: none !important;
+}
+
+.suppPaymentsSection.paymentPanelSection {
+    display: none;
+}
+
+h2.suppTitle {
+    display: none;
+}
+
+.leftToPay {
+    padding-lefT: 8px;
+}
+
+.button.small_button_a a,
+button.small_button_a,
+.button.small_button_a a:hover,
+button.small_button_a:hover,
+.button.small_button_a a:focus,
+button.small_button_a:focus,
+.button.small_button_a a:active,
+button.small_button_a:active {
+    background: @button-color;
+    border-bottom: none;
+}
+
+#eventPage .infoSection .name {
+    font-size: 38px;
+    text-align: center;
+    .font-sheldon();
+    color: @main-font-color;
+}
+
+.date {
+    text-align: center;
+}
+
+.location {
+    text-align: center;
+}
+
+.ui-spinner-input {
+    margin-left: 2em;
+}
+
+a.ui-button.ui-widget.ui-spinner-button.ui-spinner-down.ui-corner-br.ui-button-icon-only {
+    float: left;
+    display: block;
+    right: initial;
+    left: 0;
+    border-right-style: solid;
+    border-bottom-right-radius: 0;
+
+    @media @mobile {
+        left: 3px;
+        top: 7px;
+    }
+}
+
+.ui-spinner-button {
+    height: 100%;
+    cursor: pointer;
+}
+
+.selectTickets .row .ops .ui-spinner-button.ui-spinner-up,
+.selectTickets .row .ops .ui-spinner-button.ui-spinner-down {
+    background-image: none;
+}
+
+.selectTickets.mode-grouped .row .total {
+    padding-right: 0;
+    text-align: right;
+    color: @main-font-color;
+    font-weight: 600;
+    &.total {
+        text-align: center;
+        @media @mobile {
+            text-align: right;
+            margin-top: 3px;
+        }
+        @media @desktop {
+            margin-top: 5px;
+            font-size: 25px;
+        }
+    }
+}
+
+.selectTickets .row .ops .ui-spinner-button.ui-spinner-down {
+    @media @mobile {
+        left: 3px;
+        top: 4px;
+    }
+}
+
+.selectTickets .row .ops .ui-spinner-button.ui-spinner-up {
+    @media @mobile {
+        right: 1px;
+        top: 7px;
+    }
+}
+
+.selectTickets .operationTypeTitle {
+    background: transparent;
+}
+
+.numericSpinner.ui-spinner-input {
+    text-align: center;
+}
+
+.selectTickets .row .priceType {
+    color: @button-color;
+    font-size: 30px;
+    display: inline-block;
+    max-width: 186px;
+    .font-sheldon();
+    @media @mobile {
+        margin-left: 0 !important;
+        width: 100% !important;
+        font-size: 30px !important;
+        margin-bottom: 0 !important;
+        max-width: 150px;
+    }
+}
+
+input[type='text'],
+input[type='number'],
+input[type='password'],
+textarea,
+select,
+input[type=email],
+input[type=tel] {
+    @media @desktop {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.selectTickets.mode-grouped .row .price {
+    font-size: 25px;
+    color: @main-font-color;
+    font-weight: 600;
+    width: 7em;
+    float: left;
+    text-align: left;
+}
+
+.selectTickets.mode-grouped .row .pricing {
+    display: block;
+}
+
+.selectTickets .row .price,
+.selectTickets .row .ops,
+.selectTickets .row .extra-info {
+    margin-top: 0;
+}
+
+.selectTickets .operationTypeTitle {
+    @media @mobile {
+        background-color: none;
+    }
+}
+
+.selectTickets .row .ops {
+    float: right;
+}
+
+#eventPage #ticketsPane .selectTickets .buttonsContainer {
+    @media @mobile {
+        background-color: #fff;
+    }
+}
+
+.selectTickets.mode-grouped .row .total {
+    text-align: center;
+    @media @mobile {
+        text-align: right;
+    }
+}
+
+.ui-icon-triangle-1-n,
+.ui-icon-triangle-1-s {
+    background-image: url(../../../UserContent/images/plus.png) !important;
+    background-size: 100%;
+    margin-top: -12px !important;
+    margin-left: -13px !important;
+    background-position: 0;
+}
+
+.ui-icon-triangle-1-s {
+    background-image: url(../../../UserContent/images/minus.png) !important;
+}
+
+.ui-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.selectTickets .tickets>.row {
+    @media @mobile {
+        height: 52px !important;
+    }
+}
+
+.operationTypeTitle {
+    display: none;
+}
+
+#eventPage #ticketsPane .selectTickets .button.proceed {
+    @media @mobile {
+        padding-right: 8px !important;
+        background: none !important;
+        box-shadow: none !important;
+    }
+}
+
+#eventPage.non-seated .selectTickets .summary {
+    text-align: right;
+}
+
+#eventPage.non-seated .selectTickets .tickets {
+    text-align: left !important;
+}
+
+.screen-Event4_aspx #eventPage .selectTickets .summary>SPAN.total {
+    font-size: 25px;
+    color: @main-font-color;
+}
+
+span.total-label {
+    /* text-align: right; */
+    padding-right: 29px;
+    font-size: 25px;
+    color: @main-font-color;
+}
+
+#eventPage.non-seated .selectTickets .tickets,
+#eventPage.non-seated .selectTickets .summary {
+    width: 100%;
+    text-align: right;
+    vertical-align: middle;
+    @media @desktop {
+        padding-right:0;
+    }
+}
+
+#eventPage.non-seated .selectTickets .tickets, #eventPage.non-seated .selectTickets .summary {
+    @media @mobile {
+        width: 100% !important;
+    }
+}
+
+.button.small_button_a A::after,
+button.small_button_a::after {
+    content: none;
+}
+
+.selectTickets .buttonsContainer .button>a {
+    padding: 1em;
+    border-radius: 0 !important;
+}
+
+.ui-button-icon-only .ui-icon {
+    background-size: 100% !important;
+}
+
+.selectTickets .buttonsContainer .button>a {
+    font-size: 20px !important;
+    .font-sheldon();
+    padding: 10px 0;
+    border-radius: 0 !important;
+    width: 200px;
+    text-transform: uppercase;
+    border: 2px solid @button-color;
+
+    &:hover {
+        background: #fff;
+        border: 2px solid @button-hover-color;
+        color: @button-hover-font;
+    }
+    @media @mobile {
+        padding: 10px 0;
+        width: 140px;
+        font-size: 18px !important;
+        box-shadow: none;
+    }
+}
+
+.selectTickets .tickets>.row {
+    @media @mobile {
+        height: 85px !important;
+    }
+}
+
+.location {
+    border-bottom: none;
+}
+
+.location {
+    display: none;
+}
+
+#eventPage .seatingPlanContainer,
+#eventPage.non-seated #ticketsPane {
+    @media @mobile {
+        padding-top: 31px;
+    }
+}
+
+.selectTickets .row .priceType {
+    @media @mobile {
+        margin-left: 0 !important;
+        width: 100% !important;
+        font-size: 30px !important;
+        margin-bottom: 0 !important;
+        max-height: 43px;
+    }
+}
+
+.selectTickets.mode-grouped .row .price {
+    @media @mobile {
+        font-size: 25px;
+        margin-top: 0 !important;
+    }
+}
+
+.selectTickets .row .ops,
+.selectTickets .row .price,
+.selectTickets .row .total,
+.selectTickets .row .icons,
+.selectTickets .header .ops,
+.selectTickets .header .price,
+.selectTickets .header .total,
+.selectTickets .header .icons {
+    @media @mobile {
+        margin-left: 0;
+    }
+}
+
+.selectTickets.mode-grouped .row .total.total {
+    color: @main-font-color;
+    font-weight: 600;
+    @media @mobile {
+        font-size: 25px;
+        margin-top: 0;
+    }
+}
+
+.bc-item.select-tickets {
+    display: list-item;
+    i {
+        display: none;
+    }
+}
+
+.selectTickets .row .ops .ui-spinner.ui-widget {
+    padding-left: 0;
+    background-color: white;
+}
+
+@media @mobile {
+    #eventPage #content>div#ticketsPane .selectTickets h3+.numOfTickets.zero,
+    #eventPage #selectSeatsTab.selected,
+    #eventPage .tabsWrapper #baTab.selected,
+    #eventPage #selectedAreaInfo .button-moreAreas {
+        background: @button-color !important;
+        border: 1px solid @button-color;
+        padding: 10px 0;
+        bottom: 30px;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 0;
+        width: 186px;
+    }
+    #eventPage #ticketsPane .selectTickets .buttonsContainer {
+        background-color: #fff;
+        box-shadow: none;
+    }
+}
+
+// Adjust font sizes for medium-small screens
+@media only screen and (min-width: 781px) and (max-width: 1118px) {
+    .selectTickets .row .ops .count {
+        width: 28px;
+        font-size: 21px;
+    }
+    .selectTickets.mode-grouped .row .price,
+    .selectTickets.mode-grouped .row .total,
+    .selectTickets.mode-grouped .header .price {
+        width: 86px;
+    }
+}
+
+// Adjustments for ipad potrait 
+@media @iPadPortrait {
+    .selectTickets .row .priceType {
+        font-size: 30px !important;
+        max-height: 314px;
+        margin-left: 0 !important;
+        width: 364px !important;
+        max-width: unset;
+        .font-sheldon();
+    }
+    .selectTickets.mode-grouped .row .price {
+        font-size: 25px;
+    }
+    .selectTickets .tickets>.row {
+        height: 97px !important;
+    }
+    .selectTickets.mode-grouped .row .total.total {
+        font-size: 25px !important;
+    }
+}
+
+.basket-section {
+    border-color: @button-color;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+body.screen-Event4_aspx .ph_event_page #ticketsPane .selectTickets.mode-GeneralAdmission h4 {
+    color: @main-font-color;
+}
+
+#eventPage.non-seated .selectTickets .summary {
+    background-color: @yellow;
+    @media @desktop {
+        padding-right: 50px;
+        margin-top: 50px;
+    }
+    @media @mobile {
+        width: 100% !important;
+        padding-right: 10px !important;
+    }
+}
+
+    
+#eventPage #content>div#ticketsPane .selectTickets h3+.numOfTickets.zero {
+    color: @light-blue !important;
+    background: #fff !important;   
+    border: 2px solid @light-blue !important; 
+}
+
+.selectTickets.mode-grouped .row .total {
+    @media @mobile {
+        width: 4em;
+    }
+}
+
+.ui-widget.ui-widget-content {
+    border: 2px solid @main-font-color !important;
+    border-radius: 0!important;
+}

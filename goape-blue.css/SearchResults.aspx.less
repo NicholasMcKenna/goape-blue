@@ -1,0 +1,104 @@
+@import 'custom';
+
+.itemImageSize {
+    @media @desktop {
+        max-width: 107px;
+        max-height: 90px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+.searchResult {
+    .itemsList {
+        .dataItem {
+            &:hover {
+                IMG, .item_image IMG {
+                    .itemImageSize;
+                }
+            }
+
+            .buttonsContainer {
+                padding-top: 0.5em!important;
+            }
+            
+            .button.small_button_a {
+                @media @mobile {
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+
+                    A {
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .event > DIV {
+                padding-top: 2em;
+            }
+
+            .itemsDataContainer .description {
+                word-break: break-word;
+            }
+
+            div.item_image {
+                background-image: none;
+                width: 92px;
+                height: 94px;
+
+                IMG {
+                    .itemImageSize;
+                }
+            }
+
+            .button.small_button_a A {
+                .buttonSize;
+            
+                &:hover {
+                    padding-top:1.6em;
+                }
+
+                A, A:hover {
+                    margin-top:0;
+                }
+            }
+        }
+    }
+}
+
+.searchHeader {
+    text-align: center;
+}
+
+.searchResult .showFirstEvent .moreEvents a {
+    @media @desktop {
+        font-size: 1.2em;
+    }
+    font-weight: bold;
+}
+
+.searchResult .itemsList .dataItem .itemsButtonsContainer {
+    @media @desktop {
+        display: table-cell; 
+    }
+}
+
+.dataItem .previewFull {
+    display: none;
+}
+
+.innerdescription {
+    display: block;
+}
+
+.searchResult .dataItem .itemsDataContainer, .searchResult .dataItem:hover .itemsDataContainer {
+    @media @desktop {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .searchResult .dataItem .itemsDataContainer, .searchResult .dataItem:hover .itemsDataContainer {
+        width: 97%;
+    }
+}

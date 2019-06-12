@@ -1,0 +1,1251 @@
+@import 'custom';
+
+.summaryBasketContainer {
+    border-bottom: 1px solid #cccccc;
+    background-image: none;
+}
+
+.roundUpDonationSection {
+    border: none;
+
+    @media @desktop {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        background: transparent;
+        color: @button-color;
+
+        @media @desktop {
+            font-size: 25px;
+            padding: 0;
+            margin: 15px 0;
+        }
+    }
+
+    .ui-icon.ui-icon-info {
+        background-color: transparent;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 1px) {
+    .screen-Checkout_aspx {
+
+        .basket-container .basketEvent .eventInfoSection .imageContainer,
+        h1.pageSectionTitle,
+        .roundUpDonationSection,
+        h2#lblChoosePayment {
+            display: none;
+        }
+
+        .promptExtras-dialog .promptExtrasDlg .elementItem .imgContainer {
+            background-image: none;
+        }
+
+        .summaryBasketContainer .infoSection>DIV {
+            padding-left: 13px;
+        }
+
+        .basket-section:not(.ticketsBasketSection) .basketItem {
+            width: 100%;
+        }
+
+        .paymentPanelSection {
+            margin-top: 0;
+        }
+
+        .suppTitle,
+        #termsAndConditions .containerTitle,
+        #lblChoosePayment,
+        .dataProtectionContainer h2 {
+            font-weight: bold;
+            color: #404041;
+            display: inline-block;
+            padding: 0.2em 2em;
+            position: absolute;
+            left: 0;
+            right: 20%;
+            margin-top: -1.5em;
+        }
+
+        .summaryBasketContainer .infoSection>DIV {
+            padding-left: 0;
+        }
+
+        .summaryBasketContainer .bundleGroups .infoSection .imageContainer {
+            display: none;
+        }
+
+        .basket-section>DIV {
+            margin-bottom: 0;
+        }
+
+        .summaryBasketContainer .basketProperty.PriceToPay {
+            margin-top: -16px;
+        }
+
+        .summaryBasketContainer .basketItem>SPAN {
+            line-height: 1em;
+            padding: 0;
+        }
+
+        span.containerTitle,
+        h2.suppTitle {
+            display: none !important;
+        }
+
+        .summaryBasketContainer.expanded .editBasket {
+            top: 7px;
+        }
+
+        div#PaymentDetails1_paymentFormPanelCtrl_InsuranceSection {
+            display: none;
+        }
+
+        .suppPaymentsSection {
+            padding-top: 0;
+        }
+
+        .bottomButtonsBar .small_button_a.proceed {
+            right: 5px;
+            background-color: @button-color;
+        }
+
+        #bottomButtonsBar .button.small_button_a {
+            padding: 22px;
+        }
+
+        &.virtualKeyboardOpen .preConfirmationMessage {
+            margin-top: 3px;
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    .primaryPaymentMethods {
+        margin-top: 0;
+        width: 99.1%;
+    }
+
+    .paymentMethod.selected {
+        color: white;
+    }
+
+    .leftToPay {
+        background-color: #ffffff;
+    }
+
+    .screen-Checkout_aspx.virtualKeyboardOpen .bottomButtonsBar .small_button_a.proceed {
+        right: 6px;
+        height: unset;
+        background-color: @button-color;
+        bottom: -10px;
+        width: 97% !important;
+    }
+
+    .summaryBasketContainer .basket-container .basketTotals {
+        border-bottom: 0;
+        border: none;
+    }
+
+    .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.prompt-dialog.ui-dialog-buttons.ui-draggable.ui-resizable {
+        display: none !important;
+    }
+
+    #leftToPayContainer {
+        padding-bottom: 6em;
+
+        @media only screen and (max-width: 780px) and (min-width: 1px) {
+            padding-bottom: 3em !important;
+        }
+    }
+
+    .screen-Checkout_aspx.virtualKeyboardOpen p#terms-accept {
+        position: relative;
+        bottom: -31px;
+        color: @main-font-color;
+    }
+
+    .summaryBasketContainer .basketTotals .summaryLine {
+        padding-top: 0;
+    }
+
+    .screen-Checkout_aspx #bottomButtonsBar .button.small_button_a {
+        padding: 14px;
+    }
+
+    h2#contactMeHeader {
+        margin-left: 0;
+        padding-left: 0;
+        border-bottom: 1px solid;
+    }
+
+    #frmDataProtection>div:nth-child(1) {
+        padding-top: 20px;
+    }
+
+    form#frmDataProtection {
+        max-width: 98%;
+    }
+
+    .summaryBasketContainer .timerMessage {
+        bottom: 51px;
+    }
+
+    .summaryBasketContainer .timerMessage .CountDownRemainingTimeTitle {
+        color: black;
+    }
+
+    .screen-Checkout_aspx.virtualKeyboardOpen .bottomButtonsBar .small_button_a.proceed {
+        bottom: 9px;
+    }
+
+    .button.small_button_a A::after,
+    button.small_button_a::after {
+        content: none;
+    }
+
+    button#btnOrder {
+        padding: 13px !important;
+        padding-bottom: 31px !important;
+    }
+
+    /*
+    .screen-Checkout_aspx.virtualKeyboardOpen .timerMessage {
+        display: none !important;
+    }
+    */
+    .paymentMethod.selected {
+        background: @button-color;
+    }
+
+    .ph_payment_details .timerMessage {
+        /* position: fixed !important; */
+        display: none !important;
+    }
+
+    .summaryBasketContainer.expanded .expand {
+        border-left-width: 1px;
+    }
+}
+
+.ui-dialog-buttonpane {
+    box-shadow: none;
+}
+
+.screen-Checkout_aspx .suppTitle,
+.screen-Checkout_aspx #termsAndConditions .containerTitle,
+.screen-Checkout_aspx #lblChoosePayment,
+.screen-Checkout_aspx .dataProtectionContainer h2 {
+    color: black;
+}
+
+.suppTitle,
+#termsAndConditions .containerTitle,
+#lblChoosePayment,
+.dataProtectionContainer h2 {
+    font-weight: bold;
+    background: none;
+    background: none;
+    background: none;
+    background: none;
+    background: none;
+    background: none;
+    color: black;
+    border-top: 1px solid;
+    padding-left: 10px;
+}
+
+.summaryBasketContainer .basketProperty.PriceToPay,
+.summaryBasketContainer .basketProperty.TotalPriceToPay,
+.summaryBasketContainer .basketProperty.TotalAmount,
+.summaryBasketContainer .basketProperty.Value,
+.summaryBasketContainer .basketProperty.PaymentValue {
+    position: absolute;
+    right: 0;
+}
+
+@media only screen and (min-width: 781px) {
+    .screen-Checkout_aspx .summaryBasketContainer .basketProperty.PriceToPay {
+        margin-top: 0;
+    }
+
+    .paymentMethod.selected {
+        background: #005833;
+    }
+
+    #termsAndConditions {
+        margin-top: 36px;
+        margin-bottom: 20px;
+    }
+
+    p#terms-accept {
+        @media only screen and (min-width: 781px) {
+            font-size: 1.3em;
+        }
+
+        font-weight: bold;
+    }
+
+    .containerTitle {
+        font-size: 1.5em;
+    }
+
+    .primaryPaymentMethods {
+        padding-top: 18px;
+    }
+
+    .primaryPaymentMethods {
+        margin-top: 0;
+    }
+
+    .paymentMethod>LABEL {
+        color: white;
+    }
+
+    .basketItem span.basketProperty.PriceToPay {
+        position: static;
+    }
+
+    #instructionsPanel {
+        display: none;
+    }
+
+    .summaryBasketContainer .timerMessage {
+        display: none !important;
+    }
+
+    .ph_tunnellocation {
+        display: none;
+    }
+
+    .pageSectionContainer {
+        border: 0;
+        border-top: 0;
+    }
+
+    .pageSectionContainer .pageSectionTitle {
+        border-left: 0;
+        border-bottom: none !important;
+    }
+
+    #termsAndConditions .containerTitle {
+        border-top: 0;
+    }
+
+    body.body_css.interface-6.dir-LTR.screen-Checkout_aspx.template-TemplateTopMin {
+        margin-top: 120px;
+    }
+
+    #termsAndConditions .containerTitle:before {
+        content: none;
+    }
+
+    .pageSectionContainer {
+        padding-left: 0;
+    }
+
+    .imageContainer {
+        display: none;
+    }
+
+    .summaryBasketContainer .basketTotals .summaryLine {
+        padding-right: 0;
+        font-size: 19px;
+    }
+
+    .bottomButtonsBar {
+        float: right;
+        clear: right;
+        width: 30%;
+        margin-top: 75px;
+        padding-left: 0;
+    }
+
+    #bottomButtonsBar .button.small_button_a {
+        width: 100%;
+    }
+
+    .buttonExplain.btnOrder.button {
+        width: 100% !important;
+    }
+
+    .preConfirmationMessage {
+        box-shadow: none;
+        background: transparent;
+        margin-right: 0;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .buttonExplain {
+        font-weight: bold;
+        font-size: 13px;
+        padding-top: 1em;
+    }
+
+    .summaryBasketContainer .infoSection>DIV {
+        padding-left: 6px;
+        text-align: left;
+    }
+
+    .paymentPanelSection {
+        margin-top: 4em;
+    }
+
+    p#terms-accept {
+        font-size: 1.5em;
+        font-weight: normal;
+    }
+
+    .suppTitle:before {
+        content: none;
+    }
+
+    #lblChoosePayment:before,
+    .suppTitle:before,
+    .dataProtectionContainer h2:before {
+        content: none;
+    }
+
+    h2#contactMeHeader {
+        margin-top: 49px;
+    }
+
+    h2.suppTitle {
+        display: none;
+    }
+
+    .dataProtectionContainer form {
+        margin-top: 6em;
+    }
+}
+
+/*
+.summaryBasketContainer .expand {
+    display: none !important;
+}*/
+
+#basketContainer {
+    border: none;
+    border-left: 1px solid @green;
+
+    @media @mobile {
+        border-left: none;
+    }
+}
+
+.summaryBasketContainer .infoSection>DIV {
+    padding-left: 6px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.summaryBasketContainer .infoSection .name {
+    font-size: 30px;
+    color: @main-font-color;
+    font-family: @font-sheldon;
+    font-weight: normal;
+}
+
+.summaryBasketContainer .basketItemSummary,
+.summaryBasketContainer .exchangeBasketSection .exchangeSummary {
+    @media @mobile {
+        font-size: 12px;
+    }
+}
+
+#paymentContainer::before {
+    background-color: transparent;
+}
+
+.suppPmContainer.open .suppPayMethodFormContainer {
+    border: 2px solid @button-color;
+}
+
+.suppPmContainer.open .suppLabel {
+    margin-bottom: 0;
+    border-left: 1px solid;
+    text-align: center;
+    padding-left: 0;
+}
+
+.suppPayMethodFormContainer .label,
+.suppPayMethodFormContainer fieldset .label {
+    text-align: left;
+}
+
+.giftVoucherCheck {
+    text-decoration: none;
+    color: @main-font-color  !important;
+    font-size: 22px;
+    border: 1px solid;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: @font-sheldon;
+}
+
+.suppPmContainer.open .suppLabel,
+.suppPmContainer .suppLabel {
+    margin-bottom: 0;
+    border-left: 2px solid @button-color;
+    text-align: center;
+    padding-left: 0;
+    background: transparent;
+    border: 2px solid @button-color;
+    color: @button-color  !important;
+}
+
+.pmTypeGiftVoucher .suppLabel LABEL:before {
+    content: none;
+}
+
+.summaryBasketContainer .expand {
+    padding-top: 0;
+    background: white;
+    border: 1px solid @main-color;
+}
+
+@media @mobile {
+    .screen-Checkout_aspx #termsAndConditions {
+        background: #fff;
+        bottom: 63px;
+
+        a,
+        button.btnLink {
+            color: @button-color;
+        }
+    }
+
+    .leftToPay {
+        text-align: center;
+    }
+
+    #basketContainer {
+        margin-top: 5px;
+    }
+
+    .screen-Checkout_aspx p#terms-accept {
+        font-size: 18px;
+    }
+
+    .suppPayMethodFormContainer .label,
+    .suppPayMethodFormContainer fieldset .label {
+        min-width: 4.5em;
+    }
+}
+
+.bottomButtonsBar {
+    @media @mobile {
+        background-color: #fff;
+        height: 148px;
+    }
+}
+
+.preConfirmationMessage {
+    background: white;
+    color: black;
+}
+
+.pageSectionTitle {
+    color: @main-font-color;
+    font-family: @font-sheldon;
+    font-weight: normal;
+    font-size: 38px;
+}
+
+.leftToPay {
+    color: @main-font-color;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#leftToPayContainer {
+    background-color: @light-blue;
+}
+
+@media @desktop {
+    #leftToPayContainer {
+        padding-top: 1em;
+        width: 99.5%;
+        padding-bottom: 4em;
+        border-radius: 0;
+        background-color: @light-blue;
+    }
+
+    #termsAndConditions {
+        position: absolute;
+        bottom: -115px;
+        padding-right: 0;
+        width: 100%;
+        background-color: transparent;
+
+        a,
+        button.btnLink {
+            color: @main-font-color;
+            text-decoration: underline;
+        }
+    }
+
+    .paymentPanelSection {
+        margin-top: 1em;
+    }
+
+    #paymentMethodSelection {
+        width: 100%;
+    }
+
+    .pageSectionContainer {
+        padding-left: 0;
+        padding-right: 107px;
+    }
+
+    .paymentMethod.selected {
+        background: #e96d1f;
+    }
+
+    .paymentMethod.selected {
+        background: #e96d1f;
+        border-left: none;
+    }
+
+    #suppPayMethods {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .noimage LABEL::before {
+        top: 21px;
+        left: 17px;
+    }
+
+    .paymentMethod .name {
+        font-size: 25px;
+    }
+
+    .leftToPay {
+        font-size: 25px;
+    }
+
+    .bottomButtonsBar {
+        background-color: transparent;
+    }
+}
+
+h2#lblChoosePayment {
+    display: none;
+}
+
+.summaryBasketContainer .basketItemSummary .details,
+.summaryBasketContainer .hasInfoSection .basketProperty.Details {
+    max-width: 10em;
+}
+
+.suppPayMethodFormContainer {
+    display: block !important;
+    padding-bottom: 15px;
+}
+
+.suppPmContainer.open .suppLabel,
+.suppPmContainer .suppLabel {
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+}
+
+.suppPayMethodFormContainer {
+    border: 2px solid @button-color;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.suppPmContainer.open .suppLabel,
+.suppPmContainer .suppLabel {
+    text-align: left !important;
+}
+
+.suppPmContainer .suppLabel LABEL {
+    padding-left: 12px;
+    font-size: 25px;
+}
+
+.pmTypeGiftVoucher .paymentForm {
+    padding-left: 0;
+}
+
+.suppPayMethodFormContainer label.fieldLabel {
+    font-size: 30px;
+    color: @main-font-color;
+    font-family: @font-sheldon;
+    font-weight: 300;
+}
+
+.paymentForm select,
+.paymentForm input[type=text] {
+    font-size: 18px;
+    padding: 8px;
+    padding-left: 4px;
+}
+
+.giftVoucherCheck {
+    padding: 0 10px;
+}
+
+.screen-Checkout_aspx .suppTitle,
+.screen-Checkout_aspx #termsAndConditions .containerTitle,
+.screen-Checkout_aspx #lblChoosePayment,
+.screen-Checkout_aspx .dataProtectionContainer h2 {
+    color: @main-font-color;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p#terms-accept {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+input#chkReadTerms {
+    background: white;
+    font-size: 20px;
+    padding: 2px;
+    -webkit-appearance: none;
+    width: 19px;
+    border: 1px solid;
+    height: 19px;
+    border-radius: 4px;
+    position: relative;
+    top: 7px;
+
+    &:active,
+    &:checked:active {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    &:checked {
+        background-color: #e9ecee;
+        border: 1px solid #adb8c0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+        color: #99a1a7;
+
+        &:after {
+            content: '\2714';
+            font-size: 12px;
+            position: absolute;
+            top: 0px;
+            left: 3px;
+            color: #99a1a7;
+        }
+    }
+}
+
+.giftVoucherInvalid {
+    font-size: 20px;
+}
+
+.summaryBasketContainer .containerTitle {
+    font-size: 38px;
+    font-family: @font-sheldon;
+    font-weight: normal;
+    color: @main-font-color;
+}
+
+.summaryBasketContainer .editBasket,
+.summaryBasketContainer .editBasket:hover {
+    top: 54px;
+    color: @button-color;
+    font-size: 14px;
+}
+
+.summaryBasketContainer .editBasket::after {
+    content: none;
+}
+
+.basketItemSummary .count {
+    font-weight: normal;
+    padding-right: .2em;
+    font-size: 30px;
+    display: block;
+    width: 100%;
+    padding-left: 7px;
+    font-family: @font-sheldon;
+    font-weight: normal;
+    color: @main-font-color;
+}
+
+.summaryBasketContainer .basketItemSummary .priceTypes {
+    font-family: @font-sheldon;
+    font-weight: normal;
+    color: @main-font-color;
+    font-size: 30px;
+}
+
+span.priceTypes {
+    padding-left: 7px;
+}
+
+.summaryBasketContainer .basketItemSummary .details,
+.summaryBasketContainer .hasInfoSection .basketProperty.Details {
+    max-width: 17em;
+}
+
+.summaryBasketContainer .basketItemSummary .details {
+    display: none !important;
+}
+
+.screen-Checkout_aspx .summaryBasketContainer .basketProperty.PriceToPay {
+    margin-top: 0;
+    font-size: 25px;
+    padding-top: 0;
+    color: @main-font-color;
+}
+
+.summaryBasketContainer .basketProperty.Details {
+    max-width: 17em;
+}
+
+span.small_text_a.sectionItemFieldValue {
+    font-weight: bold;
+    font-size: 18px;
+    max-width: 30em;
+}
+
+span.basketProperty.PriceToPay>span {
+    font-size: 20px;
+}
+
+.summaryBasketContainer .basketTotals .summaryLine {
+    color: @main-font-color;
+    font-size: 25px;
+}
+
+.summaryBasketContainer .basketTotals {
+    border: none;
+    border-top: 0.1em solid @green;
+    border: none;
+}
+
+.summaryBasketContainer .basket-section>DIV {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.summaryBasketContainer .basket-section {
+    border-bottom: none;
+}
+
+.preConfirmationMessage {
+    background: transparent;
+    color: @main-font-color;
+    width: 100%;
+    font-size: 14px;
+
+    @media @mobile {
+        width: 95%;
+        border: none !important;
+        box-shadow: none;
+        margin-left: 0;
+    }
+}
+
+.summaryBasketContainer {
+    @media @desktop {
+        width: 32%;
+    }
+
+    box-shadow: none;
+}
+
+.pageSectionContainer,
+.dataProtectionContainer {
+    @media @desktop {
+        width: 63%;
+    }
+}
+
+.bottomButtonsBar {
+    @media @desktop {
+        width: 35%;
+    }
+}
+
+.buttonExplain {
+    color: @button-color;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button.small_button_a A::after,
+button.small_button_a::after {
+    content: none;
+}
+
+#bottomButtonsBar .button.small_button_a {
+    padding: 18px;
+    font-size: 22px;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: none !important;
+    .font-sheldon();
+}
+
+#leftToPayContainer {
+    @media @desktop {
+        padding-top: 0em;
+        padding-bottom: 3em;
+    }
+}
+
+.paymentMethod>LABEL {
+    padding: 4px;
+}
+
+.noimage LABEL::before {
+    top: 11px;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.t_and_c-dialog.ui-dialog-buttons.ui-draggable.ui-resizable {
+    h1 {
+        font-size: 30px;
+        color: @goape-green;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.basket-section>DIV {
+    @media @mobile {
+        border-top: none;
+    }
+}
+
+.fieldsForm.small_text_a.frmFields {
+    @media @desktop {
+        display: none;
+    }
+}
+
+.paymentMethod .name {
+    @media @mobile {
+        font-size: 21px;
+    }
+}
+
+@media @mobile {
+
+    .suppPayMethodFormContainer .label,
+    .suppPayMethodFormContainer fieldset .label {
+        min-width: 100%;
+        display: block;
+    }
+
+    .paymentMethod.selected::after,
+    .paymentMethod::after {
+        top: 10px;
+        color: @goape-green;
+    }
+
+    .leftToPay {
+        text-align: center !important;
+        padding-left: 0;
+    }
+
+    button#btnOrder {
+        //padding: 8px !important;
+    }
+
+    .paymentPanelSection {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .paymentMethod>LABEL {
+        width: 96%;
+    }
+
+    .paymentMethod.selected {
+        padding-left: 0;
+        margin-left: 0 !important;
+    }
+
+    button#btnOrder {
+        padding: 2px !important;
+        padding-bottom: 31px !important;
+    }
+
+    #basketContainer {
+        margin-top: 0;
+    }
+
+    #leftToPayContainer {
+        padding-bottom: 4em;
+    }
+}
+
+.bc-item.select-tickets,
+.bc-item.review,
+.bc-item.checkout {
+    display: list-item;
+}
+
+.fieldsForm.small_text_a.frmFields {
+    display: block;
+}
+
+@media @desktop {
+    .preConfirmationMessage {
+        text-align: left;
+    }
+
+    .bottomButtonsBar {
+        float: left;
+        clear: left;
+        margin-top: 75px;
+    }
+
+    #termsAndConditions {
+        bottom: -95px;
+    }
+
+    .leftToPay {
+        padding-left: 17px;
+    }
+}
+
+.paymentMethod.selected {
+    background: transparent;
+    color: @goape-green;
+    border: none;
+
+    @media @mobile {
+        border: 1px solid @goape-green;
+    }
+}
+
+.primaryPaymentMethods {
+    @media @desktop {
+        padding-top: 4px;
+        border: 1px solid @goape-green;
+    }
+}
+
+.paymentMethod.selected>LABEL {
+    color: @goape-green;
+}
+
+.extra {
+    display: none;
+}
+
+#paymentMethodForms {
+    @media @desktop {
+        padding: 0;
+    }
+}
+
+#paymentMethodForms .paymentForm[data-pmtype='OnlinePayment'] .row.FirstExplanation {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.primaryPaymentMethods .label {
+    width: 100%;
+    float: left;
+    padding: 1px;
+    word-break: normal;
+    color: @main-font-color;
+}
+
+.summaryBasketContainer .basketItemSummary,
+.summaryBasketContainer .exchangeBasketSection .exchangeSummary {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 1311px) {
+
+    .pageSectionContainer {
+        padding-right: 0;
+    }
+
+    #bottomButtonsBar .button.small_button_a {
+        width: 100% !important
+    }
+
+    .bottomButtonsBar {
+        width: 48%;
+    }
+}
+
+.screen-Checkout_aspx .ui-dialog.ui-widget {
+    @media @mobile {
+        width: 97.5% !important;
+    }
+}
+
+.paymentPanelSection>DIV>* {
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.screen-Checkout_aspx.virtualKeyboardOpen .bottomButtonsBar {
+    height: 112px;
+    margin-top: 64px;
+}
+
+.qtip.timer-tooltip {
+    background-color: #44433e !important;
+    border: none !important;
+    color: #e96d1f !important;
+}
+
+@media @iPadLandscape {
+    .bottomButtonsBar {
+        width: 65.2%;
+    }
+
+    #bottomButtonsBar .button.small_button_a {
+        width: 100% !important;
+    }
+}
+
+.footer-nav .footer-top {
+    visibility: hidden;
+}
+
+.suppPmContainer .suppLabel * {
+    cursor: unset;
+    font-size: 16px;
+}
+
+.giftVoucherCheck {
+    text-transform: uppercase;
+}
+
+.suppPayMethodFormContainer {
+    border-radius: 0;
+}
+
+.suppPmContainer.open .suppLabel,
+.suppPmContainer .suppLabel {
+    border-radius: 0;
+}
+
+.suppPmContainer .suppLabel LABEL {
+    color: @main-font-color;
+    font-family: @font-sheldon;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.mandatoryFieldMarker {
+    color: #cb2b19;
+    display: none;
+}
+
+.suppPayMethodFormContainer fieldset .label,
+.suppPayMethodFormContainer fieldset .field {
+    @media @mobile {
+        min-width: 229px;
+    }
+}
+
+@media only screen and (min-width: 781px) and (max-width: 914px) {
+    .summaryBasketContainer {
+        width: 25%;
+    }
+
+    .summaryBasketContainer .editBasket,
+    .summaryBasketContainer .editBasket:hover {
+        top: 45px;
+        right: 0;
+    }
+}
+
+#bottomButtonsBar .button.small_button_a {
+    @media @mobile {
+        width: 97% !important;
+    }
+}
+
+body {
+    @media @desktop {
+        margin-top: 65px;
+    }
+}
+
+.suppPaymentsSection.paymentPanelSection {
+    margin-top: 0;
+}
+
+.formInputColumn.field.VoucherNumber {
+    padding-top: 12px;
+    padding-left: 12px;
+
+    @media @mobile {
+        padding-left: 0;
+    }
+}
+
+.pmTypeGiftVoucher .VoucherNumber .formDescriptionColumn {
+    padding-top: 10px;
+}
+
+div#paymentSection {
+    display: none;
+}
+
+#leftToPayContainer {
+    display: none;
+}
+
+#siteMenuBar.hasclient #customerBox a {
+    line-height: 0;
+}
+.paymentForm select, .paymentForm input[type=text] {
+    border: 2px solid @main-font-color;
+}
+
+.giftVoucherCheck {
+    padding: 9px;
+    margin-left: 22px;
+    border: 2px solid;
+}
+
+.screen-Checkout_aspx.virtualKeyboardOpen .bottomButtonsBar {
+    @media @mobile {
+        margin-top: 100px;
+        height: 128px;
+    }
+}
+
+.screen-Checkout_aspx.virtualKeyboardOpen #termsAndConditions {
+    @media @mobile {
+        bottom: -85px;
+    }
+}
+
+.button.small_button_a:hover, .button.small_button_a:focus, .button.small_button_a:active {
+    border-bottom: 2px;
+}
+
+#bottomButtonsBar .button.small_button_a {
+    border: 2px solid !important;
+}
+
+#PH_NavMenu {
+    display: none;
+}

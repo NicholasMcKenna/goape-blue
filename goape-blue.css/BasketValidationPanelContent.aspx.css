@@ -1,0 +1,7 @@
+.itemExtraDataDialog #itemsExtraDataDialog .buttonsContainer button {
+    background: #043c6f;
+    border-radius: 0;
+    font-size: 22px;
+    font-family: 'Sheldon', sans-serif;
+    font-weight: 300;
+}

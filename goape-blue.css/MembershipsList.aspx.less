@@ -1,0 +1,97 @@
+.itemsList .dataItem a.hasImage div.item_image img {
+    max-height: 102px;
+    border-radius: 0%;
+}
+
+.itemsList .dataItem .item_image_container div.item_image {
+    background-image: none;
+}
+
+.itemsList .dataItem div.item_image>div {
+    padding: 0;
+}
+
+.innerdescription {
+    display: block;
+}
+
+.dataItem .previewFull {
+    display: none;
+}
+
+@media only screen and (min-width: 781px) {
+    .itemsList .dataItem a.hasImage div.item_image img {
+        max-height: 150px;
+    }
+    .itemsList .dataItem div.item_image img {
+        width: 100%;
+        height: auto;
+    }
+    .itemsList .dataItem div.item_image {
+        padding-top: 150px;
+    }
+    .itemsList .dataItem .item_image_container {
+        width: 100%;
+        height: 150px;
+    }
+    .itemsList .dataItem {
+        width: calc(29% - 0.75em);
+        height: 30em;
+    }
+    .itemsList .dataItem .item_image_container {
+        padding-right: 0;
+    }
+    .itemsList .dataItem {
+        padding: 0;
+    }
+    .itemsList .dataItem a.hasImage div.item_image img {
+        padding-top: 0;
+    }
+    .itemsList .dataItem>* {
+        width: 100%;
+    }
+    body .itemsList .dataItem {
+        margin-right: 2% !important;
+        margin-left: 2% !important;
+        text-align: center;
+    }
+    .itemsList .itemsButtonsContainer .button {
+        float: none;
+    }
+    .itemsList .itemsButtonsContainer {
+        float: none;
+        text-align: center;
+    }
+    .itemsList .itemsButtonsContainer .button.moreInfo a {
+        text-align: center;
+        color: #5777a9;
+        text-decoration: underline;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .itemsList .dataItem>* {
+        width: 100%;
+        height: auto;
+    }
+    .itemsList .dataItem {
+        width: calc(100% - 2em);
+    }
+    .itemsList .dataItem div.item_image {
+        padding-top: 162px;
+    }
+    .itemsList .dataItem .item_image_container div.item_image {
+        width: 100%;
+    }
+    .itemsList .dataItem a.hasImage div.item_image img {
+        height: 150px;
+        width: 100%;
+        max-height: 150px;
+    }
+    .itemsList .dataItem .item_image_container,
+    .dataItem.item_background.item_data_background>a {
+        width: 100%;
+    }
+}

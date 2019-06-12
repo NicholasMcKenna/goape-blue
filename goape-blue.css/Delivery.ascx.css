@@ -1,0 +1,15 @@
+.deliveryMethod.selected > LABEL {
+    width: 60%;
+}
+
+@media screen and (max-width: 780px)
+{
+    .deliveryMethod.selected {
+        background: #559e27;
+        color: #fff;
+    }
+
+    .deliveryMethod.selected::after {
+        content: none;
+    }
+}

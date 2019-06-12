@@ -1,0 +1,2932 @@
+@import "custom";
+
+@font-face {
+    font-family: "Gothic821";
+    src: url('././UserContent/fonts/Gothic821CondTL-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "VAG";
+    src: url('././UserContent/fonts/Linotype-VAGRoundedStd-Light.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "VAG";
+    src: url('././UserContent/fonts/Linotype-VAGRoundedStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Sheldon';
+    src: url('././UserContent/fonts/blue/3922D2_0_0.eot');
+    src: url('././UserContent/fonts/blue/3922D2_0_0.eot?#iefix') format('embedded-opentype'), url('././UserContent/fonts/blue/3922D2_0_0.woff2') format('woff2'), url('././UserContent/fonts/blue/3922D2_0_0.ttf') format('truetype');
+}
+
+body,
+.screen-content,
+input,
+textarea,
+keygen,
+select {
+    font-family: @font;
+}
+
+body {
+    margin-top: 89px;
+    transition: margin-top 400ms;
+    max-width: @page-max-width;
+    background-color: @background;
+
+    @media @mobile {
+        margin-top: 4px;
+        background-color: @background;
+    }
+
+    @media @desktop {
+        max-width: @page-max-width;
+    }
+}
+
+button {
+    .font-sheldon();
+}
+
+.screen-content {
+    background-color: @background;
+}
+
+.template-TemplateTop {
+    div#group_Header {
+        display: none;
+    }
+
+    @media @desktop {
+        .showDetails #description .innerdescription {
+            display: block !important;
+        }
+
+        .showDetails #description span.previewFull {
+            display: none;
+        }
+    }
+}
+
+#group_Header-fixed {
+    background-color: @header-background-color  !important;
+    box-shadow: none !important;
+
+    @media @desktop {
+        max-width: @page-max-width;
+        height: @header-height;
+    }
+
+    @media @mobile {
+        max-width: 100%;
+    }
+
+    div#PH_ContactUsContainer {
+        /*position: absolute;*/
+        right: 272px;
+        top: 22px;
+        text-align: center;
+    }
+
+    div#contactUs {
+        @media @mobile {
+            display: none;
+        }
+
+        display: inline-block;
+        margin-top: 7px;
+        margin-right: 8px;
+    }
+
+    div#contactBox {
+        @media @mobile {
+            display: none;
+        }
+
+        text-align: left;
+        display: inline-block;
+    }
+
+    #contactBox>h3 {
+        margin: 0;
+    }
+
+    :not(.menudisplayed) {
+        @media @mobile {
+            #siteMenuBar .flm_login {
+                right: 13rem;
+
+                span {
+                    color: @button-font-color;
+                    background-color: @main-color;
+                }
+            }
+        }
+    }
+
+    &.menudisplayed {
+        @media @mobile {
+            #PH_MenuButton {
+                right: 7px;
+                position: absolute;
+                float: right;
+            }
+        }
+    }
+
+    button.skipRegion {
+        display: none !important;
+    }
+
+    .navMenu.displayed {
+        margin-top: 0;
+    }
+
+    #PH_Search_Box {
+        display: table-cell !important;
+
+        FORM.frmSearch {
+            .SearchBoxContainer {
+                @media @desktop {
+                    height: 35px;
+                }
+            }
+
+            .SearchTextButton:before {
+                @media @desktop {
+                    font-size: 20px;
+                    color: grey;
+                    line-height: 62px;
+                }
+            }
+
+            INPUT[type=text] {
+                @media @desktop {
+                    width: 261px;
+                    height: 88%;
+                    margin-left: 6px;
+                }
+
+                @media only screen and (min-width: 781px) and (max-width: 1024px) {
+                    width: 202px;
+                }
+            }
+
+            .SearchTextButton {
+                @media @desktop {
+                    background-color: @button-color;
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    .buttonHover();
+                }
+            }
+        }
+
+        .searchManager .findByTitle {
+            display: none;
+        }
+    }
+
+    #PH_Float_Menu {
+
+        .flm_login {
+            color: black;
+            border: 2px solid @button-color;
+
+            @media @desktop {
+                padding: 10px;
+            }
+
+            &:hover {
+                .buttonHover();
+            }
+
+            .buttonBoxShadow;
+        }
+
+        #navMenu_Float_Join_item {
+            border: 2px solid @button-color;
+            color: @button-font-color;
+            background-color: @button-color;
+
+            @media @desktop {
+                padding: 10px;
+                margin: 2px;
+
+                &:hover {
+                    .buttonHover();
+                }
+            }
+
+            >span {
+                color: inherit;
+                background-color: inherit;
+                padding: 0;
+                border-radius: 0;
+
+                &:hover {
+                    .buttonHover();
+                }
+            }
+
+            .buttonBoxShadow;
+        }
+    }
+
+    .siteMenuContainer>*:last-child:after,
+    .siteMenuContainer>*:after,
+    #siteMenuBar.hasclient #customerBox:after,
+    #siteMenuBar .flm_Join>span:after {
+        background: none;
+    }
+
+    #PH_logo {
+        padding-left: 0 !important;
+
+        @media @desktop {
+            float: left !important;
+            margin-top: 9px !important;
+            width: @header-logo-width  !important;
+            display: table-cell !important;
+            max-width: 75px;
+        }
+
+        @media @mobile {
+            margin-top: -12px;
+            margin-left: 0;
+        }
+
+        @media @iPadPortrait {}
+
+        a img {
+            max-width: 100%;
+            margin-left: -9px;
+
+            @media @mobile {
+                width: 100% !important;
+                max-width: 55%;
+            }
+        }
+    }
+
+    #siteMenuBar {
+        @media @desktop {
+            height: @header-height;
+        }
+    }
+}
+
+.template-TemplateFull,
+.template-TemplateWithRight {
+    #group_left {
+        margin-top: 0em;
+
+        @media screen and (min-width: 1152px) {
+            width: 21%;
+        }
+
+        .ui-datepicker .ui-datepicker-title {
+            line-height: 2em;
+        }
+
+        .timeline-Footer {
+            display: none;
+        }
+    }
+
+    #group_main {
+        @media screen and (min-width: 1152px) {
+            .widthSettings();
+        }
+    }
+
+    #group_Header {
+        @media @desktop {
+            max-width: @page-max-width;
+        }
+
+        @media @mobile {
+            display: none !important;
+        }
+
+        #PH_Menu {
+            @media screen and (min-width: 1152px) {
+                >* {
+                    .widthSettings();
+                }
+            }
+        }
+
+        .navMenu {
+            @media screen and (min-width: 1152px) {
+                .widthSettings();
+            }
+        }
+    }
+
+    .screen-content {
+        max-width: 76%;
+
+        @media @iPad {
+            max-width: 100%;
+        }
+    }
+}
+
+#PH_HeaderBackground-fixed {
+    background-color: @header-background-color;
+
+    @media @desktop {
+        height: 93px;
+        //box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+    }
+}
+
+#PH_HeaderBackground {
+    background-image: none;
+}
+
+button#skipToContent {
+    display: none !important;
+}
+
+#group_Header {
+    box-shadow: none;
+}
+
+#PH_Menu li.selected,
+#PH_Menu ul li {
+    background-image: none;
+    background-color: @button-color;
+
+    &:hover {
+        background-color: @button-hover-color;
+    }
+}
+
+ul#ui-id-1 {
+    @media @desktop {
+        max-width: 50% !important;
+    }
+}
+
+.helpDeskRequestPanel A {
+    .buttonColor();
+    .buttonBoxShadow;
+
+    &:hover,
+    &:focus,
+    &:active {
+        .buttonHover();
+    }
+}
+
+.button {
+    a {
+        background-image: none !important;
+    }
+
+    &.small_button_a {
+        .buttonColor();
+        .buttonBoxShadow;
+
+        &:hover,
+        &:focus,
+        &:active {
+            .buttonHover();
+        }
+
+        .addToBasket {
+            background-color: @button-color;
+
+            &:hover,
+            &:focus,
+            &:active {
+                .buttonHover();
+            }
+        }
+    }
+
+    &.small_button_a A {
+        .buttonColor();
+
+        &:hover,
+        &:focus,
+        &:active {
+            .buttonHover();
+        }
+
+        .buttonBoxShadow;
+    }
+}
+
+.button.disabled.small_button_a A,
+.button.disabled.small_button_a A:hover,
+button.disabled.small_button_a,
+button.disabled.small_button_a:hover {
+    color: @light-blue !important;
+    background-color: #fff !important;
+    border: 2px solid @light-blue !important;
+    box-shadow: none;
+    font-weight: normal !important;
+}
+
+/* --------------- Search results ASPX */
+
+.searchResult,
+.searchResult .itemsList {
+    margin-top: 0.5em;
+}
+
+footer {
+    ul>li {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        min-height: 24px;
+        padding-right: 10px;
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        @media @desktop {
+            line-height: 39px;
+        }
+    }
+
+    ul.socialIcons li {
+        @media @desktop {
+            float: left;
+        }
+
+        @media @mobile {
+            display: inline-block;
+        }
+
+        margin-left: 12px;
+        list-style: none;
+        padding-right: 0 !important;
+    }
+
+    #upperFooter>ul>li.facebook {
+        @media @mobile {
+            margin-left: 0;
+        }
+    }
+
+    ul.socialIcons:after,
+    ul.socialIcons:before {
+        content: "";
+        display: table;
+    }
+
+    ul.socialIcons a {
+        font-size: 22px;
+        border-radius: 50%;
+        display: block;
+        width: 38px;
+        height: 38px;
+        background: #fff;
+        color: @button-color;
+        text-align: center;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        line-height: 22px;
+
+        @media @mobile {
+            line-height: 39px;
+        }
+    }
+
+    .facebook:hover a {
+        background: #3b5998;
+        color: #fff;
+    }
+
+    .twitter:hover a {
+        background: #1da1f2;
+        color: #fff;
+    }
+
+    .instagram:hover a {
+        background: #125688;
+        color: #fff;
+    }
+
+    ul.socialIcons {
+        -webkit-padding-start: 0;
+        text-align: center;
+    }
+
+    div#lowerFooter {
+        @media @mobile {
+            padding-top: 25px;
+            text-align: center;
+        }
+    }
+}
+
+#group_Footer {
+    background-color: @footer-background-color;
+}
+
+div#upperFooter {
+    min-height: 63px;
+}
+
+#footerImages {
+    margin-top: 11px;
+
+    @media @desktop {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    >img {
+        width: 100%;
+        height: 100%;
+        padding-right: 11px;
+    }
+
+    >img:nth-child(1) {
+        max-width: 277px;
+
+        @media @mobile {
+            max-width: 106px;
+        }
+    }
+
+    >img:nth-child(2) {
+        max-width: 97px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        @media @mobile {
+            max-width: 61px;
+        }
+    }
+
+    img:nth-child(3) {
+        max-width: 380px;
+
+        @media @mobile {
+            max-width: 128px;
+        }
+    }
+}
+
+.template-TemplateFull #group_Header #PH_Menu>*,
+.template-TemplateWithRight #group_Header #PH_Menu>* {
+    width: 100% !important;
+    max-width: 100%;
+}
+
+#group_Header #PH_Menu {
+    height: 45px;
+    padding-top: 5px;
+}
+
+#PH_logo>a>img {
+    max-width: 74%;
+}
+
+#PH_LargeLogo>a>img {
+    max-width: 181px;
+    margin-bottom: 10px;
+}
+
+#PH_Menu li.subMenuClose:hover a,
+#PH_Menu li.subMenuClose.simulateHover a {
+    background-color: @button-color;
+    border-top: none;
+}
+
+#PH_Menu li.subMenuClose:hover li.navMenu-Item,
+#PH_Menu li.subMenuClose.simulateHover li.navMenu-Item {
+    background-image: none;
+    background-color: @button-color;
+}
+
+#group_Header .nav .navMenu-SubList a span {
+    margin-left: 9px;
+}
+
+#group_Header .nav .navMenu-SubList a:hover {
+    background-color: #00573e;
+}
+
+.imageContainer {
+    background-image: none !important;
+}
+
+.pageSectionTitle {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background-image: none;
+    background-color: transparent;
+    text-transform: uppercase;
+
+    &:after {
+        content: none;
+    }
+}
+
+.pageSectionContainer {
+    border-top: 1px solid #cccccc;
+    background-image: none;
+    margin-bottom: 0;
+}
+
+.ticket {
+    background-image: none;
+    margin-right: 10px;
+}
+
+#bottomButtonsBar .button.small_button_a {
+    padding: 34px;
+}
+
+.basketTotals {
+    margin-top: 0;
+}
+
+.screen-OpsConfirmation_aspx .pageSectionTitle {
+    position: static;
+}
+
+div#row_pf_489_IsForFuturePayByCustomer {
+    display: none !important;
+}
+
+.template-TemplateFull .backbutton,
+.template-TemplateTop .backbutton,
+.template-TemplateTopMin .backbutton {
+    @media @mobile {
+        padding-left: 30px;
+    }
+}
+
+@keyframes newBlink {
+    from {
+        color: silver !important;
+    }
+
+    to {
+        color: white !important;
+    }
+}
+
+#termsAndConditions .containerTitle.blink,
+#lblChoosePayment.blink {
+    animation-name: newBlink !important;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.87, 0.01, 0.32, 0.96);
+}
+
+.screen-Checkout_aspx.virtualKeyboardOpen p#terms-accept {
+    font-weight: bold;
+}
+
+#PH_BasketWidget div.footer {
+    background-image: none;
+
+    .button.proceed {
+        margin-left: 5px;
+    }
+}
+
+.loginSuggestMessage {
+    @media @desktop {
+        top: 5.2em !important;
+        font-size: medium !important;
+    }
+
+    a {
+        font-weight: bold;
+    }
+}
+
+#positionButtonDiv {
+    height: 28px;
+}
+
+#deliveryAddressForm.withLoginMessage FIELDSET {
+    @media @desktop {
+        padding-top: 4.1em !important;
+    }
+}
+
+.showFirstEvent .moreEvents a {
+    @media @desktop {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}
+
+.imageWrap>* {
+    @media @mobile {
+        margin-bottom: 25px;
+    }
+}
+
+/* move to delivery.less */
+
+#deliveryMethod .subTitle {
+    @media @mobile {
+        display: block;
+        font-weight: bold;
+        font-size: 1.5em;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.screen-Order_aspx .deliveryHint {
+    @media @mobile {
+        display: block;
+    }
+}
+
+#deliveryAddressForm.withLoginMessage FIELDSET {
+    padding-top: 0 !important;
+}
+
+.loginSuggestMessage {
+    position: static !important;
+}
+
+.couponLabel:before {
+    content: none;
+}
+
+#PH_Show_page {
+    @media @desktop {
+        max-width: 925px;
+        margin: auto;
+
+        .largeImageContainer {
+            padding-top: 72px;
+        }
+
+        .largeImage {
+            width: 100%;
+            padding-top: 36px;
+            border-top: 1px solid #979797;
+        }
+    }
+}
+
+form.promoBox {
+    display: none;
+}
+
+#footer {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        margin-bottom: 1.8rem;
+        width: 100%;
+        padding-left: 12px;
+        margin-top: 12px;
+
+        @media @mobile {
+            width: 96%;
+        }
+    }
+
+    ul li {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        margin: 0 10px 0 0;
+    }
+
+    a,
+    button.btnLink {
+        color: @button-color;
+        text-decoration: none;
+    }
+
+    >div:nth-child(1) {
+        border-bottom: 0.5px solid;
+    }
+}
+
+#footer .inner {
+    display: none;
+}
+
+.screen-OpsConfirmation_aspx div#instructionsPanel {
+    display: none;
+}
+
+div#media {
+    display: none;
+}
+
+.promptItem IMG.item_image {
+    visibility: hidden;
+}
+
+.button.small_button_a a,
+button.small_button_a,
+.button.small_button_a a:hover,
+button.small_button_a:hover,
+.button.small_button_a a:focus,
+button.small_button_a:focus,
+.button.small_button_a a:active,
+button.small_button_a:active {
+    background: @button-color;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.button.small_button_a.addToBasket.disabled,
+.button.small_button_a.addToBasket.disabled:hover {
+    background: gainsboro;
+    color: black;
+    box-shadow: none;
+}
+
+@media @mobile {
+    div#group_0 {
+        display: none;
+    }
+
+    .template-TemplateFull.screen-HelpDeskRequestForm_aspx #PH_MenuButton,
+    .template-TemplateFull.screen-HospitalityEvents_aspx #PH_MenuButton,
+    .template-TemplateFull.screen-HospitalityEvent_aspx #PH_MenuButton,
+    .template-TemplateFull.screen-EventScheduleByShow_aspx #PH_MenuButton {
+        display: table-cell;
+    }
+
+    .selectTickets .row .priceType {
+        max-height: 50px;
+    }
+
+    .selectTickets .row .priceTypes,
+    .selectTickets .row .priceType {
+        font-size: 14px;
+        height: 24px;
+    }
+
+    .selectTickets .tickets>.row {
+        height: 97px !important;
+    }
+
+    .selectTickets .row .priceType {
+        margin-left: 0 !important;
+        width: 100% !important;
+        font-size: 14px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .screen-Event4_aspx #eventPage .selectTickets .summary>SPAN.total {
+        padding-right: 0 !important;
+    }
+
+    #eventPage .infoSection .name {
+        font-size: 34px !important;
+    }
+
+    #eventPage .infoSection .name {
+        font-size: 27px !important;
+        margin-top: 38px !important;
+        padding-right: 0 !important;
+    }
+
+    #siteMenuBar #CountDown.active .timer-tooltip,
+    #siteMenuBar.hasclient #CountDown.active .timer-tooltip {
+        right: 79px !important;
+    }
+
+    #siteMenuBar #my_basket.active {
+        right: 9px !important;
+    }
+    #siteMenuBar #my_basket>span, #siteMenuBar div[id='my basket']>span {
+        top: 9px;
+    }
+    #group_Header-fixed #PH_Search_Box {
+        right: 37px;
+    }
+
+    #PH_MenuButton {
+        right: 7px;
+        top: 0;
+        position: absolute;
+        float: right;
+    }
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .eventsCalendar .ui-datepicker .ui-datepicker-header:before {
+        display: none;
+    }
+
+    .eventsCalendar .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+        width: 80%;
+    }
+}
+
+@media @desktop {
+    .x {
+        display: none;
+    }
+
+    #group_Header-fixed div#PH_ContactUsContainer {
+        right: 20em;
+    }
+
+    .account {
+        display: none;
+    }
+
+    .loginOrRegisterWizard .su_personal .errorMessage {
+        width: 65%;
+    }
+
+    #PH_Menu ul li.subMenuOpen {
+        z-index: 999;
+    }
+
+    .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.loginOrRegisterDlg.ui-draggable.ui-resizable {
+        z-index: 1000;
+    }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 1px) {
+    #group_Header-fixed #PH_Search_Box {
+        right: 2.5em;
+    }
+
+    .x {
+        display: block;
+        margin: 10px;
+    }
+
+    #group_Header-fixed #PH_Search_Box FORM.frmSearch .SearchTextButton:hover,
+    #group_Header-fixed #PH_Search_Box FORM.frmSearch .SearchTextButton:focus,
+    #group_Header-fixed #PH_Search_Box FORM.frmSearch .SearchTextButton:active {
+        color: white;
+        background-color: transparent;
+        border-bottom: none;
+    }
+}
+
+.loginOrRegisterWizard.su_address #reg_skip {
+    display: none;
+}
+
+.description {
+    word-break: normal !important;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    #group_Header-fixed #PH_Search_Box {
+        right: 3.5em;
+    }
+
+    #siteMenuBar #my_basket.active {
+        right: 1px !important;
+    }
+
+    #siteMenuBar.hasclient #customerBox {
+        right: 137px;
+    }
+}
+
+span.left,
+.right {
+    display: inline-block;
+}
+
+.pre-message {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 11px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #f2f252;
+}
+
+span.left {
+    font-weight: bold;
+    color: red;
+}
+
+.loginOrRegisterWizard .errorMessage {
+    color: Red;
+    font-style: italic;
+    font-size: 120%;
+    width: 65%;
+}
+
+.screen-custom_calendar_aspx {
+    div#PH_ {
+        max-width: 1140px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .qtip.timer-tooltip {
+        @media @mobile {
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+    }
+
+    #qtip-0:not(.ie9haxors) div.qtip-content,
+    #qtip-0:not(.ie9haxors) div.qtip-titlebar {
+        @media @mobile {
+            margin-top: -1px;
+        }
+    }
+
+    .qtip-content .CountDownRemainingTimeTitle {
+        @media @mobile {
+            display: inline-block;
+        }
+    }
+
+    main {
+        text-align: center;
+    }
+
+    section.event-selection {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+
+        .instructions {
+            color: @green;
+            .font-sheldon();
+            /* sfs */
+            padding: 0 .5em;
+            font-size: 38px;
+            padding-bottom: 10px;
+
+            @media @mobile {
+                font-size: 26px;
+            }
+        }
+
+        .event-title h2 {
+            .font-sheldon();
+            color: @main-font-color;
+            padding: 14px 0;
+            font-size: 54px;
+            margin: 0;
+            padding-bottom: 2px;
+            text-transform: uppercase;
+
+            @media @mobile {
+                font-size: 38px;
+            }
+        }
+    }
+
+    .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+
+        @media @mobile {
+            width: 90%;
+        }
+    }
+
+    div#date {
+        text-align: center;
+    }
+
+    table.ui-datepicker-calendar {
+        margin: 0 auto;
+    }
+
+    table.ui-datepicker-calendar td {
+        padding: 4px;
+        padding: 6px;
+        font-size: 21px;
+        font-family: @font;
+        font-weight: 300;
+
+        @media @mobile {
+            padding: 2px;
+            font-size: 20px;
+        }
+    }
+
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+        padding: 8px;
+        background-color: transparent;
+        color: black;
+        position: relative;
+        overflow: hidden;
+        outline: none;
+        border: 0.5px;
+        font-size: 22px;
+        border-radius: 2px;
+        box-shadow: none;
+        transition: none;
+        width: 175px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #16d68c;
+            box-shadow: none;
+            border: 0.5px;
+            background: none;
+            color: white;
+        }
+
+        @media @mobile {
+            width: 46px !important;
+            height: 30px !important;
+        }
+    }
+
+    .ui-widget-content {
+        background-color: @background;
+    }
+
+    .ui-datepicker .ui-datepicker-calendar td[title="Available"] a {
+        background: @background;
+        font-size: 21px;
+
+        @media @mobile {
+            font-size: 20px;
+        }
+    }
+
+    .ui-datepicker .ui-datepicker-title {
+        margin: 0 0.3em;
+        color: #fff;
+        text-align: left;
+        text-transform: uppercase;
+        .font-sheldon();
+        font-size: 38px;
+
+        @media @mobile {
+            font-size: 30px;
+            line-height: 1.3;
+        }
+    }
+
+    #eventslist>h2 {
+        display: none;
+    }
+
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-datepicker .ui-datepicker-calendar td[title="Available"] {
+        background: @background;
+    }
+
+    .ui-datepicker-calendar td[title="Available"] {
+        background: @background;
+    }
+
+    .ui-datepicker-calendar td[title="Available"] a {
+        &:hover {
+            color: @background;
+            background: none;
+        }
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        background: @button-color;
+        border: 2px solid @main-color  !important;
+        border-radius: 0;
+        color: @main-font-color;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .ui-state-disabled,
+    .ui-widget-content .ui-state-disabled,
+    .ui-widget-header .ui-state-disabled {
+        opacity: 1;
+        border: 0 !important;
+
+        span {
+            border: 0 !important;
+        }
+    }
+
+    section.calendar-message {
+        padding: 0 20px;
+
+        .message-container {
+            font-weight: 300;
+            font-size: 18px;
+            color: @main-font-color;
+        }
+
+        >.message-container>h2 {
+            color: @main-font-color;
+            font-size: 48px;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            @media @mobile {
+                font-size: 40px;
+            }
+        }
+
+        >div>p {
+            font-family: @font;
+            font-size: 18px;
+
+            @media @mobile {
+                font-size: 14px;
+            }
+        }
+
+        >div>p>a {
+            color: @main-font-color;
+            font-weight: bold;
+        }
+    }
+
+    .ui-datepicker-unselectable .ui-state-default {
+        background: @light-blue;
+        color: @main-font-color;
+    }
+
+    .ui-state-hover {
+        background: white;
+    }
+
+    span.small_text_a.chooseDayCaption {
+        visibility: hidden;
+    }
+
+    select#dateSelect {
+        visibility: hidden !important;
+    }
+
+    #eventslist .dataItem.item_background.item_data_background {
+        display: inline-block;
+        padding: 12px;
+        width: 75px;
+
+        &:hover {
+            background-color: @main-color  !important;
+        }
+    }
+
+    .ui-datepicker td span,
+    .ui-datepicker td a {
+        display: block;
+        padding: .2em;
+        text-align: center;
+    }
+
+    div#pickadate {
+        width: 66%;
+        margin: 12px auto;
+
+        @media @mobile {
+            width: 91%;
+        }
+    }
+
+    .ui-datepicker td span,
+    .ui-datepicker td a {
+        padding: 0.3em;
+    }
+
+    .ui-datepicker table {
+        font-size: 1.4em;
+    }
+
+    .ui-datepicker .ui-datepicker-header {
+        font-size: 30px;
+        padding-top: 0;
+
+        @media @mobile {
+            font-size: 22px;
+        }
+    }
+
+    .ui-datepicker {
+        width: 100%;
+    }
+
+    #description>div.brief>span>button {
+        color: white;
+        background-color: @button-color;
+        padding: 7px;
+    }
+
+    .ui-state-active {
+        background-color: @button-color  !important;
+        color: white !important;
+    }
+
+    .ui-datepicker .ui-datepicker-calendar td[title="Available"] a {
+        background: #fff;
+    }
+
+    .ui-datepicker-calendar td[title="Available"] a:hover {
+        color: white;
+        background: @green;
+        border-color: @green  !important;
+    }
+
+    .ui-datepicker .ui-datepicker-prev,
+    .ui-datepicker .ui-datepicker-next {
+        position: absolute;
+        top: 2px;
+        width: 1.8em;
+        height: 1.8em;
+
+        .ui-icon {
+            background-image: none;
+            width: 26px;
+            height: 28px;
+            text-indent: 6px;
+            color: white;
+        }
+
+        span {
+            margin-left: -27%;
+            margin-top: -9%;
+
+            @media @mobile {
+                margin-top: -32%;
+            }
+        }
+    }
+
+    .ui-datepicker .ui-datepicker-prev {
+        left: inherit;
+        right: 67px;
+
+        .ui-icon::before {
+            font-family: FontAwesome;
+            content: '\f060';
+        }
+    }
+
+    .ui-datepicker .ui-datepicker-next {
+        .ui-icon::before {
+            font-family: FontAwesome;
+            content: '\f061';
+        }
+    }
+
+    .ui-datepicker .ui-datepicker-next-hover {
+        right: 1px;
+    }
+
+    .timeslot {
+        display: inline-block;
+    }
+
+    .timeslot {
+        display: inline-block;
+        margin: 0.7%;
+        border-radius: 0;
+        width: calc(12.5% - 2px);
+
+        @media @mobile {
+            min-width: 43px;
+            width: calc(25% - 10px);
+        }
+    }
+
+    .slot {
+        padding: 12px;
+        border-radius: 0;
+        font-family: @font;
+        font-weight: normal;
+        font-size: 21px;
+        padding: 12px 0; //width: 85px;
+        text-align: center;
+
+        @media @mobile {
+            font-size: 20px;
+        }
+    }
+
+    .timeslot.LowSeatsOccupation {
+        background: #fff;
+        color: @main-color;
+        border: 2px solid;
+
+        a {
+            color: @main-color;
+        }
+    }
+
+    .timeslot.MediumSeatsOccupancy {
+        background: #fff;
+        color: @red;
+        border: 2px solid;
+
+        a {
+            color: @red;
+        }
+    }
+
+    .timeslot.HighSeatsOccupancy {
+        background: #fff;
+        color: @red;
+        border: 2px solid;
+
+        a {
+            color: @red;
+        }
+    }
+
+    .timeslot {
+        &:hover {
+            background: @green  !important;
+            color: white !important;
+
+            a {
+                color: white !important;
+            }
+        }
+    }
+
+    .timeslot.SoldOut {
+        background: @light-blue;
+        color: @main-font-color;
+        border: 2px solid;
+        cursor: not-allowed;
+
+        &:hover {
+            background: @light-blue  !important;
+            color: @main-font-color;
+            cursor: not-allowed;
+        }
+    }
+
+    a:hover,
+    button.btnLink:hover {
+        color: @button-hover-color;
+        text-decoration: none;
+    }
+
+    a,
+    button.btnLink {
+        font-weight: bold;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .ui-datepicker th {
+        font-size: 25px;
+        text-transform: uppercase;
+        .font-sheldon();
+        color: #033051;
+
+        @media @mobile {
+            font-size: 20px;
+        }
+    }
+
+    .ui-state-highlight,
+    .ui-widget-content .ui-state-highlight,
+    .ui-widget-header .ui-state-highlight {
+        border: 2px solid @main-color;
+    }
+
+    .ui-widget-header {
+        background-color: @button-color;
+        border-radius: 0;
+    }
+
+    .time-legend {
+        display: none;
+        margin: 2em 0 2em 0;
+        
+
+        @media @mobile {
+            margin: 2em 0 2em 0;
+            padding-left: 3%;
+        }
+    }
+
+    .leg {
+        display: inline-block;
+        padding-left: 10px;
+
+        @media @mobile {
+            text-align: left;
+            padding-top: 6px;
+            display: block;
+        }
+
+        .legend {
+            display: inline-block;
+            border-radius: 0;
+            font-weight: bold;
+            vertical-align: middle;
+            width: 25px;
+            height: 25px;
+            min-width: 25px;
+
+            &.good {
+                background-color: @main-color;
+                color: white;
+            }
+
+            &.average {
+                background-color: @red;
+                color: white;
+            }
+
+            &.poor {
+                background-color: @light-blue;
+                color: #fff;
+            }
+        }
+
+        .description {
+            display: inline-block;
+            padding-left: 8px;
+            font-family: @font;
+            font-weight: normal;
+
+            @media @desktop {
+                font-size: 18px;
+            }
+        }
+    }
+
+    section.event-times {
+        margin: 30px 0 50px 0;
+        min-height: 200px;
+    }
+}
+
+#siteMenuBar #my_basket>span:before,
+#siteMenuBar [id='my basket']>span:before {
+    color: @main-color  !important;
+}
+
+#siteMenuBar #my_basket>span:before,
+#siteMenuBar [id='my basket']>span:before {
+    content: none;
+}
+
+div#PH_NavMenu {
+    font-size: 21px;
+    line-height: 4.3;
+    float: right;
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+#PH_NavMenu>nav>a {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: @main-font-color;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#siteMenuBar.hasclient #customerBox a {
+    color: @main-color;
+    line-height: 7;
+}
+
+.summaryBasketContainer .basketItemSummary .details,
+.summaryBasketContainer .hasInfoSection .basketProperty.Details {
+    max-width: 11em;
+}
+
+#PH_FooterNav>div>div.footer-bottom>a {
+    color: white;
+}
+
+#siteMenuBar .greeting {
+    padding-left: 6px;
+}
+
+a,
+button.btnLink {
+    color: @button-color;
+
+    &:hover {
+        color: @button-hover-color;
+        text-decoration: none;
+    }
+}
+
+.footer-nav {
+    padding-left: 10px;
+    font-family: @font;
+
+    @media @mobile {
+        padding-top: 10px;
+    }
+
+    a,
+    button.btnLink {
+        font-size: 16px;
+        padding-left: 10px;
+        text-transform: none;
+        font-weight: 300;
+
+        @media @mobile {
+            font-size: 16px;
+        }
+    }
+
+    .footer-top {
+        margin-bottom: 10px; //padding-left: 10px;
+
+        a {
+            color: @green;
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: none;
+
+            @media @mobile {
+                font-size: 14px;
+                white-space: pre-wrap;
+            }
+        }
+    }
+}
+
+.ph_banner {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    font-size: 16px;
+    display: none;
+    transition: top 400ms;
+}
+
+#PH_Event_page {
+    margin-top: 20px !important;
+}
+
+.selectTickets.mode-grouped .row .total.zero:after {
+    content: none;
+}
+
+
+
+.menu_btn:before,
+.menu_btn:hover,
+.menu_btn.selected:before,
+.menu_btn.selected:hover {
+    color: @main-color;
+}
+
+.navMenu li#seperator {
+    display: none;
+}
+
+.selectTickets.mode-grouped .row .pricing:before,
+.selectTickets.mode-grouped .row .pricing:after {
+    content: none !important;
+}
+
+.selectTickets.mode-grouped .row .listPrice {
+    display: none !important;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='password'],
+textarea,
+select,
+input[type=email],
+input[type=tel] {
+    font-size: 16px;
+    font-family: @font;
+    font-weight: normal;
+}
+
+.ajax-refreshing::before {
+    content: '\f1ce' !important;
+}
+
+.plzWait {
+    color: @main-font-color;
+}
+
+button.back {
+    padding: 10px 0;
+    border: 2px solid @main-color;
+    position: absolute;
+    left: 0;
+    color: @main-font-color;
+    min-width: 100px;
+    border-radius: 0;
+    background-color: #fff;
+    font-size: 20px;
+    width: 200px;
+    text-transform: uppercase;
+
+    @media @mobile {
+        padding: 8px 0;
+        left: 12px;
+        top: 18px;
+        width: 140px;
+        font-size: 22px;
+    }
+
+    &:hover {
+        background-color: #fff;
+        color: @green;
+        border: 2px solid @green;
+    }
+}
+
+#PH_BasketWidget .basketItemSummary>.PriceToPay {
+    margin-top: 0;
+}
+
+#ui-id-1>h2 {
+    color: @main-font-color;
+}
+
+.promptExtras-dialog .promptExtrasDlg h3 {
+    background: @light-blue  !important;
+    color: @main-font-color  !important;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: @font;
+}
+
+.promptExtras-dialog .promptExtrasDlg .elementItem .imgContainer {
+    background-image: none !important;
+}
+
+.promptExtras-dialog .promptExtrasDlg .elementMessage {
+    border: 2px solid #ccc;
+    background-color: white !important;
+}
+
+.promptExtras-dialog .promptExtrasDlg .elementItem .chooseQty span,
+.promptExtras-dialog .promptExtrasDlg .elementItem .productAttribute span,
+.promptExtras-dialog .promptExtrasDlg .elementItem .chooseQty label,
+.promptExtras-dialog .promptExtrasDlg .elementItem .productAttribute label {
+    font-size: 20px !important;
+}
+
+.promptExtras-dialog .promptExtrasDlg .elementItem .name {
+    font-size: 25px !important;
+}
+
+.promptExtras-dialog .promptExtrasDlg .elementItem .pricing span {
+    font-size: 20px !important;
+    padding-bottom: 10px !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    color: #000;
+    font-weight: bold;
+    color: white;
+    background: @button-color;
+    font-family: @font-gothic;
+    font-size: 16px;
+}
+
+.ui-widget-header .ui-icon,
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon {
+    background-image: url('/UserContent/images/basket-cross.png');
+    background-size: 80%;
+}
+
+.ui-icon-closethick {
+    background-position: 1px 0px;
+}
+
+.ui-icon {
+    width: 20px;
+    height: 20px;
+}
+
+button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
+    background: none;
+    border: none !important;
+}
+
+.paymentMethod.selected {
+    background: @main-color;
+    border-left: none;
+}
+
+#siteMenuBar.hasclient #customerBox {
+    @media @mobile {
+        right: 43px;
+    }
+}
+
+.screen-opsConfirmation_aspx {
+    .pageSectionContainer {
+        border: none;
+
+        @media @mobile {
+            padding-bottom: 5em;
+        }
+    }
+
+    #instructionsPanel #content {
+        border-left: none;
+    }
+
+    .pageSectionTitle {
+        background-color: transparent;
+        min-width: 96%;
+
+        @media @mobile {
+            position: unset;
+            min-width: 92%;
+        }
+    }
+
+    .basket-container .basketEvent .eventInfoSection .imageContainer {
+        display: none;
+    }
+
+    #basketContainer .basketItemSummary {
+        @media @desktop {
+            display: table-cell;
+        }
+    }
+
+    .basket-container .basket-MerchandiseItems .infoSection .imageContainer {
+        display: none;
+    }
+
+    #instructionsPanel {
+        display: none;
+    }
+
+    .name {
+        color: @main-font-color  !important;
+        font-size: 20px !important;
+    }
+
+    span.priceTypes {
+        font-family: @font;
+    }
+
+    .summaryBasketContainer .basketItemSummary .details {
+        font-family: @font;
+    }
+
+    #paymentContainer .containerBy {
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .basketItem,
+    .basketItemSummary {
+        padding-right: 3em;
+    }
+
+    .basketTotals {
+        font-size: 20px;
+    }
+
+    .paymentDetails>SPAN {
+        font-family: @font;
+    }
+
+    .basketProperty.PriceToPay,
+    .basketProperty.TotalPriceToPay,
+    .basketProperty.TotalAmount,
+    .basketProperty.Value,
+    .basketTotals .totalCost,
+    .basketProperty.PaymentValue {
+        font-size: 20px;
+
+        @media @mobile {
+            right: 16px;
+        }
+    }
+
+    @media @mobile {
+        .summaryBasketContainer {
+            box-shadow: none;
+        }
+
+        .confirmationMessageContainer {
+            padding-bottom: 5px;
+        }
+
+        .containerTitle {
+            background: white;
+        }
+
+        .summaryBasketContainer>DIV,
+        .summaryBasketContainer .expand {
+            display: block;
+        }
+
+        .basketProperty.PriceToPay,
+        .basketProperty.TotalPriceToPay,
+        .basketProperty.TotalAmount,
+        .basketProperty.Value {
+            position: absolute;
+            float: right;
+            right: 0;
+        }
+
+        .basket-section:not(.ticketsBasketSection) .basketItem {
+            width: calc(93% - 2.5em);
+        }
+    }
+}
+
+.confirmationMessageContainer {
+    padding: 2.2em 0 !important;
+}
+
+.home {
+    background-color: white !important;
+    border: 2px solid @button-color  !important;
+    color: @button-color  !important;
+}
+
+#btnContinue {
+    margin-right: 0 !important;
+    color: @button-color  !important;
+}
+
+div#ctl00_body_ConfirmationMessage {
+    font-size: 20px;
+
+    @media @mobile {
+        font-size: 20px;
+        padding-top: 41px;
+    }
+}
+
+.screen-giftvoucherslist_aspx {
+    .itemsList .dataItem {
+        background-color: transparent;
+        border: 2px solid @button-color;
+    }
+
+    .itemsList .dataItem .item_image_container div.item_image {
+        background-image: none;
+    }
+
+    .dataItem .name {
+        color: @main-font-color;
+        font-size: 20px;
+    }
+
+    .button.small_button_a A::after,
+    button.small_button_a::after {
+        content: none;
+    }
+}
+
+.screen-errors_aspx {
+
+    Button.small_button_b,
+    Button.small_button_c {
+        color: @button-color;
+        font-size: 25px;
+    }
+
+    .pageSectionTitle {
+        position: initial;
+    }
+}
+
+FORM input[type=text],
+FORM input[type=password],
+FORM input[type=email],
+FORM input[type=tel],
+FORM input[type=number],
+.spForm input[type=text],
+.spForm input[type=password],
+.spForm input[type=email],
+.spForm input[type=tel],
+.spForm input[type=number],
+FORM SELECT,
+FORM .ui-spinner {
+    border-color: @button-color;
+}
+
+.committed .pageSectionTitle {
+    background-image: none !important;
+    border-left-color: none;
+}
+
+.confirmStaticMessage::after {
+    content: none !important;
+}
+
+.confirmStaticMessage {
+    color: @main-font-color  !important;
+    font-size: 25px !important;
+}
+
+.committed.pageSectionContainer {
+    background-image: none !important;
+}
+
+div#ctl00_body_ThankYouMessage {
+    font-family: @font  !important;
+    font-size: 15px !important;
+}
+
+div#ctl00_body_ConfirmationMessage {
+    font-size: 16px;
+    font-family: @font;
+}
+
+.showPopupMessage-errorheader {
+    font-family: @font-gothic  !important;
+    font-size: 25px !important;
+    color: @button-color  !important;
+}
+
+.ui-dialog.showPopupMessage-red {
+    border: solid 2px @button-color  !important;
+}
+
+.showPopupMessage-errorheaderIcon {
+    color: @button-color  !important;
+}
+
+#siteMenuBar .loggedinclientbox .greeting {
+    @media @desktop {
+        #siteMenuBar .loggedinclientbox .greeting {
+            display: inline-block !important;
+        }
+    }
+}
+
+#siteMenuBar.hasclient #customerBox>a:first-child:after {
+    @media @desktop {
+        display: none;
+    }
+}
+
+.alert-dialog .ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+    background: transparent;
+}
+
+div#group_0 {
+    display: none;
+}
+
+.breadcrumbs {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        color: @main-font-color;
+        margin-right: 18px;
+        font-family: @font;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        i {
+            float: right;
+            margin-top: 7px;
+            margin-left: 19px;
+            background: @green;
+            transform: rotate(29deg) skewX(-30deg) scaleY(.866);
+            width: 6px;
+            height: 6px;
+            border-top-right-radius: 40%;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+
+        i:before {
+            transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translateY(-50%);
+        }
+
+        i:after,
+        i:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: inherit;
+            width: 6px;
+            height: 6px;
+            border-top-right-radius: 40%;
+        }
+
+        i:after {
+            transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+        }
+    }
+}
+
+div#PH_breadcrumbs {
+    //position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.breadcrumbs-container {
+    padding: 8px 0;
+    width: 85%;
+    max-width: 1444px;
+    margin: 0;
+}
+
+.button.small_button_a:hover,
+.button.small_button_a:focus,
+.button.small_button_a:active {
+    border-radius: 0;
+    box-shadow: none !important;
+    background-color: @green;
+}
+
+.button.small_button_a a:hover,
+button.small_button_a:hover,
+.button.small_button_a a:focus,
+button.small_button_a:focus,
+.button.small_button_a a:active,
+button.small_button_a:active {
+    background: #fff !important;
+    border: 2px solid @green;
+}
+
+div#PH_breadcrumbs {
+    @media @mobile {
+        display: none;
+    }
+}
+
+#PH_BasketWidget>div {
+    color: @main-font-color  !important;
+    background-image: none;
+    border: 1px solid;
+}
+
+
+#PH_BasketWidget {
+    background-image: none;
+    border: 1px solid @main-color;
+    box-shadow: none;
+}
+
+#PH_BasketWidget .infoSection .name,
+#PH_BasketWidget .infoSection .season,
+#PH_BasketWidget .basketItemSummary,
+#PH_BasketWidget .group .infoSection+.basketItem {
+    color: @main-font-color;
+    font-size: 25px;
+    text-transform: uppercase;
+    
+}
+
+#PH_BasketWidget .infoSection .name {
+    .font-sheldon();
+    font-size: 30px;
+    font-weight: normal;
+}
+
+button.CancelTransFromTimer.btnCancel.btnLink span {
+    display: none;
+}
+
+.pageSectionContainer .timerMessage {
+    span.idCountDown.CountDownRemainingTimeValueRegular {
+        color: @button-color;
+    }
+
+    @media @mobile {
+        display: none !important;
+    }
+}
+
+.timerMessage {
+    color: @main-font-color  !important;
+    font-size: 15px !important;
+    font-family: @font  !important;
+    line-height: 1 !important;
+}
+
+.eventInfoSection .imageContainer[role=link],
+.eventInfoSection .name[role=link] {
+    cursor: unset;
+}
+
+@media @mobile {
+
+    .screen-custom_calendar_aspx .ui-datepicker .ui-datepicker-prev,
+    .screen-custom_calendar_aspx .ui-datepicker .ui-datepicker-next {
+        top: 3px !important;
+    }
+}
+
+#bottomButtonsBar .button.small_button_a {
+    font-size: 20px;
+    box-shadow: none;
+    padding: 10px 0 !important;
+    width: 200px !important;
+    text-transform: uppercase !important;
+}
+
+.screen-custom_calendar_aspx section.calendar-message>.message-container>h2 {
+    display: none;
+}
+
+.screen-custom_calendar_aspx section.event-times {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.screen-custom_calendar_aspx .select-adventure {
+    i {
+        display: none;
+    }
+}
+
+.bc-item {
+    display: none;
+}
+
+.screen-opsConfirmation_aspx {
+
+    .bc-item.select-tickets,
+    .bc-item.review,
+    .bc-item.checkout {
+        display: list-item;
+    }
+
+    .pageSectionContainer {
+        border: 2px solid @button-color  !important;
+    }
+
+    .committed .pageSectionTitle {
+        border-left: 1px solid @button-color  !important;
+        border-bottom: none !important;
+    }
+
+    .basket-section .basketEvent,
+    .basket-section .group.hasInfoSection,
+    .basket-section,
+    #paymentContainer {
+        border-bottom: 1px solid @button-color;
+    }
+
+    .basketTotals {
+        border: 2px solid @button-color;
+        border-left: 0;
+        border-right: 0;
+    }
+}
+
+.crmInfoMenuTooltip li {
+    border: none;
+}
+
+.location {
+    display: none;
+}
+
+#group_Footer {
+    background-color: @main-color;
+    overflow: hidden;
+}
+
+.itemsList .dataItem .description:after {
+    content: none !important;
+}
+
+#PH_BasketWidget {
+    h2 {
+        font-size: 25px;
+        text-transform: uppercase;
+        padding-left: 14px;
+        padding-bottom: 10px;
+    }
+
+    .accordionContent {
+        border-top: 1px @button-color solid;
+    }
+
+    .infoSection .name,
+    .infoSection .season,
+    .basketItemSummary,
+    .group .infoSection+.basketItem {
+        color: @main-font-color !important;
+        font-size: 20px !important;
+        text-transform: uppercase;
+    }
+
+    .basketItemSummary .count {
+        padding-left: 0;
+        font-size: 20px;
+        font-weight: normal;
+        .font-sheldon();
+    }
+
+    .basketItemSummary {
+        @media @mobile {
+            width: 100%;
+        }
+    }
+
+    span.small_text_a.sectionItemFieldValue {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #miniBasketWrapper .basketProperty.PriceToPay,
+    #miniBasketWrapper .basketProperty.TotalPriceToPay,
+    #miniBasketWrapper .basketProperty.TotalAmount,
+    #miniBasketWrapper .basketProperty.Value,
+    #miniBasketWrapper .basketProperty.PaymentValue,
+    #miniBasketWrapper .hospPriceContainer {
+        position: absolute;
+        right: 0;
+    }
+
+    .basketTotals {
+        font-size: 20px;
+        text-transform: uppercase;
+
+        >* {
+            border: 2px solid @button-color;
+            border-width: 1px 0;
+        }
+    }
+
+    .basketItem,
+    .basket-section .buttonsContainer {
+        border-top: 1px dashed @button-color;
+        padding-left: 0;
+    }
+
+    .basketEvent.accordionContent .PriceToPay {
+        @media @mobile {
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    div.footer {
+        @media @mobile {
+            top: -2px;
+        }
+    }
+}
+
+.infoSection .name {
+    text-transform: uppercase;
+}
+
+.extra {
+    font-family: @font;
+    font-size: 16px;
+    white-space: normal;
+    padding: 11px 25px;
+    border: 2px solid @orange;
+    border-radius: 0;
+    color: @main-font-color;
+    margin-top: 20px;
+
+    @media @mobile {
+        margin: 10px 16px 0;
+        font-size: 16px;
+        padding: 13px;
+        text-align: left;
+    }
+}
+
+.promptExtras-dialog .promptExtrasDlg .linkedDetails {
+    font-size: 18px;
+    color: @main-font-color;
+}
+
+.promptExtrasDlg #ui-id-1>h2 {
+    color: @main-font-color;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.promptExtras-dialog .promptExtrasDlg .elementMessage {
+    border: none;
+    font-size: 16px;
+}
+
+.promptExtras-dialog .promptExtrasDlg .elementItem .imgContainer {
+    display: none;
+}
+
+#PH_BasketWidget>div {
+    background-color: @header-background-color;
+}
+
+#qtip-0:not(.ie9haxors) div.qtip-content,
+#qtip-0:not(.ie9haxors) div.qtip-titlebar {
+    margin-top: -26px;
+}
+
+.ph_float_menu #qtip-0 {
+    display: none !important;
+}
+
+//.ui-datepicker-current-day
+.screen-content {
+
+    .basket-section .basketEvent,
+    .basket-section .group.hasInfoSection {
+        background-color: transparent;
+    }
+}
+
+.screen-custom_calendar_aspx table.ui-datepicker-calendar td>* {
+    height: 34px;
+    line-height: 34px;
+}
+
+.template-TemplateTopMin .selectTickets .errorMessage {
+    color: white;
+    background: none;
+    border: none;
+    background-color: #e8471e;
+    padding: 10px;
+    border-radius: 0;
+    font-style: normal;
+    font-size: 18px;
+    font-family: @font;
+    margin-left: 0 !important;
+
+    @media @mobile {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.template-TemplateTopMin .selectTickets .errorMessage .ui-icon {
+    background-image: url(././UserContent/images/hazard-white.png);
+    margin: 0;
+    margin-right: 15px;
+}
+
+button.change-selection {
+    font-size: 22px !important;
+    padding: 10px 0;
+    border-radius: 0 !important;
+    width: 200px;
+    text-transform: uppercase;
+    border: 2px solid @main-color;
+    color: @main-font-color;
+}
+
+.change-selection-container {
+    margin: 20px 0;
+}
+
+.qtip-content {
+    .CountDownRemainingTimeTitle {
+        display: none;
+    }
+}
+
+#PH_BasketWidget {
+    padding-top: 0;
+}
+
+@media @desktop {
+    #siteMenuBar .flm_my_basket.active {
+        margin-right: 0;
+    }
+
+    #siteMenuBar #my_basket {
+        line-height: 4;
+    }
+}
+
+#siteMenuBar #my_basket>span,
+#siteMenuBar [id='my basket']>span {
+    left: unset;
+    background-image: url(././././UserContent/images/blue/basket-icon.svg);
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.ph_basketwidget {
+    .button.small_button_a {
+        box-shadow: none;
+        border-radius: 0;
+        font-size: 22px;
+    }
+
+    .button.small_button_a a,
+    button.small_button_a,
+    .button.small_button_a a:hover,
+    button.small_button_a:hover,
+    .button.small_button_a a:focus,
+    button.small_button_a:focus,
+    .button.small_button_a a:active,
+    button.small_button_a:active {
+        box-shadow: none;
+        padding: 10px 0;
+        font-size: 22px;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: normal;
+        .font-sheldon();
+    }
+
+    .basketItemSummary .priceTypes {
+        display: block !important;
+        .font-sheldon();
+    }
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid @main-color  !important;
+    border-radius: 0;
+}
+
+.ui-dialog .ui-dialog-title {
+    display: none;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    top: 12px;
+}
+
+.ui-dialog {
+    box-shadow: none !important;
+}
+
+div#PH_FooterNav {
+    @media @mobile {
+        margin-bottom: 41px;
+    }
+}
+
+.ui-tooltip {
+    display: none !important;
+}
+
+.screen-opsConfirmation_aspx {
+    .pageSectionTitle {
+        color: @main-font-color;
+    }
+
+    .pageSectionContainer {
+        border: none;
+    }
+
+    button#scrollTopControl {
+        display: none;
+    }
+
+    .ph_basketwidget #miniBasketWrapper .basketItemSummary {
+        width: 80%;
+    }
+}
+
+button.change-selection {
+    background-color: #fff;
+}
+
+button#scrollTopControl {
+    background-color: @main-color;
+    font-size: 22px;
+    color: white;
+    padding-top: 0;
+}
+
+
+.screen-OpsConfirmation_aspx .pageSectionTitle {
+    position: static;
+}
+
+.screen-opsconfirmation_aspx {
+    .footer-nav .footer-top {
+        visibility: hidden;
+    }
+
+    .containerTitle {
+        background: transparent !important;
+        font-size: 25px;
+        padding-left: 0;
+    }
+
+    .basket-section .basketEvent .infoSection,
+    .basket-section .group.hasInfoSection .infoSection {
+        border-right: none;
+    }
+
+    #basketContainer .basketItemSummary {
+        font-size: 20px;
+
+        @media @mobile {
+            padding: 0;
+        }
+    }
+
+    .summaryBasketContainer .basketItemSummary .details {
+        visibility: hidden;
+    }
+
+    .committed .pageSectionTitle {
+        background-color: transparent;
+
+        @media @mobile {
+            border-left: none !important;
+        }
+    }
+
+    #btnContinue {
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: @button-color;
+        color: #fff !important;
+    }
+
+    .name {
+        color: @main-font-color  !important;
+        font-size: 25px !important;
+    }
+
+    a.print {
+        font-size: 18px;
+        font-family: @font;
+        text-decoration: underline;
+    }
+
+    .ph_ops_summary div.eventDetails>div.date>span {
+        font-size: 19px;
+        font-family: @font;
+        font-weight: bold;
+    }
+
+    .basket-section .basketEvent>DIV,
+    .basket-section .group.hasInfoSection>DIV {
+        @media @desktop {
+            width: 50%;
+        }
+    }
+
+    span.priceTypes {
+        display: block;
+    }
+
+    .extra {
+        font-family: @font;
+        font-size: 16px;
+        white-space: normal;
+        padding: 0;
+        border: none;
+        margin-top: 2px;
+        color: #000;
+
+        @media @mobile {
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+
+    a.iCalButton {
+        font-family: @font;
+        font-size: 17px;
+        text-decoration: underline;
+        /* padding-top: 10px; */
+    }
+
+    .saveTheDate {
+        margin-top: 10px;
+    }
+
+    .basketItemSummary {
+        padding-right: 2em;
+    }
+
+    #paymentContainer .containerTitle {
+        display: block;
+        margin-bottom: 1em;
+        font-family: @font;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    #paymentContainer .containerBy {
+        padding: 0;
+        padding-left: 0;
+        font-family: @font;
+    }
+
+    body {
+        @media @mobile {
+            padding-top: 63px;
+        }
+    }
+
+    .committed .pageSectionTitle {
+        @media @mobile {
+            width: 95%;
+            text-align: center;
+        }
+    }
+
+    div#ctl00_body_ConfirmationMessage {
+        @media @mobile {
+            font-size: 16px;
+            padding-top: 0;
+        }
+    }
+
+    .confirmationMessageContainer {
+        padding: 1.2em 0;
+
+        @media @mobile {
+            padding-bottom: 0;
+            padding-top: 5px;
+        }
+    }
+
+    .containerTitle {
+        @media @mobile {
+            padding-left: 12px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+    }
+
+    .summaryBasketContainer .basketEvent {
+        @media @mobile {
+            margin-top: -7px;
+        }
+    }
+
+    .basket-section .basketEvent>DIV,
+    .basket-section .group.hasInfoSection>DIV {
+        @media @mobile {
+            padding: 10px;
+        }
+    }
+}
+
+.external-quick-book-bar label>span {
+    font-family: @font;
+    font-weight: bold;
+}
+
+.showPopupMessage-errorheader {
+    height: 44px;
+}
+
+.showPopupMessage_msg {
+    font-size: 20px;
+}
+
+.itemsList .dataItem .description {
+    font-size: 15px;
+    font-family: @font;
+}
+
+.screen-giftvoucherslist_aspx .itemsList .dataItem {
+    background-color: transparent;
+}
+
+i.fas.fa-bars {
+    font-family: 'FontAwesome';
+    /* text-decoration: none; */
+    font-style: normal;
+    font-size: 23px;
+    line-height: 2.5;
+}
+
+#group_Header-fixed .navMenu.displayed {
+    margin-top: 63px;
+}
+
+#group_Header-fixed .navMenu.displayed,
+#group_Header-fixed.menudisplayed .navMenu .nav {
+    width: 100%;
+    height: 100vh !important;
+    background: white;
+}
+
+#group_Header-fixed.menudisplayed #PH_logo a img {
+    height: initial;
+    box-sizing: initial;
+    margin-top: initial;
+    margin-left: -9px;
+}
+
+#group_Header-fixed.menudisplayed #PH_logo {
+    margin-top: -12px;
+    width: 100px;
+}
+
+body #group_Header-fixed,
+#group_Header-fixed.menudisplayed {
+    @media mobile {
+        height: 63px;
+    }
+}
+
+#PH_BasketWidget .basketTotals .summaryLine {
+    padding: 0;
+    border: 0;
+}
+
+#PH_BasketWidget .basketTotals .totalCost {
+    font-weight: 600;
+}
+
+span#customerBox {
+    line-height: 3.6;
+    vertical-align: top;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+select {
+    border-color: @main-color;
+}
+
+div#PH_PhoneIcon {
+    float: right;
+    width: 30px;
+    height: 30px;
+    padding: 17px 0 0 0;
+    position: absolute;
+    top: 0;
+    right: 50px;
+
+    @media @desktop {
+        display: none;
+    }
+}
+
+#group_Footer {
+    clip-path: polygon(0 3px, 20% 0, 81% 10px, 100% 5px, 100% 100%, 0 100%);
+    padding-bottom: 63px;
+    padding-top: 43px;
+
+    @media @desktop {
+        clip-path: polygon(0 33px, 32% 0, 54% 23px, 71% 5px, 100% 100%, 0 100%);
+        padding-bottom: 150px;
+    }
+}

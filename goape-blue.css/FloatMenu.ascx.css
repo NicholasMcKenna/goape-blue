@@ -1,0 +1,64 @@
+#customerBox .greetingFirst,
+#customerBox .crmId,
+#customerBox .loyaltyPoints,
+#customerBox .qualityPoints {
+  display: none;
+}
+@media only screen and (min-width: 1px) and (max-width: 780px) {
+  #siteMenuBar #CountDown.active .timer-tooltip,
+  #siteMenuBar.hasclient #CountDown.active .timer-tooltip {
+    right: 0 !important;
+  }
+  #siteMenuBar #my_basket.active {
+    right: 0;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .ph_float_menu #siteMenuBar #CountDown.active .timer-tooltip, #siteMenuBar.hasclient #CountDown.active .timer-tooltip {
+        right: 90px !important;
+    }
+}
+
+.timer-tooltip.qtip {
+    max-width: 185px;
+}
+
+#siteMenuBar #my_basket .basketQtyHolder, #siteMenuBar[id='my basket'] .basketQtyHolder {
+    background: #033051 none;
+}
+
+.qtip.timer-tooltip {
+    background-color: #00eaa7;
+    border: 1px solid #00eaa7;
+}
+
+#siteMenuBar #my_basket>span:before, #siteMenuBar [id='my basket']>span:before {
+    color: white;
+}
+/*
+@media only screen and (min-width : 781px) {
+    #siteMenuBar.hasclient #customerBox > a:first-child:after {
+        content: "\f007";
+        font-size: 27px;
+        left: 93px;
+        float: left;
+        margin-top: -5px;
+    }
+
+    #siteMenuBar .loggedinclientbox .greeting {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 780px) {
+    #customerBox.crmMenuIsShow .float_menu_item .greeting {
+        font-size: 12px;
+    }
+
+    #customerBox > a > span.greeting > div > a {
+        width: 111px !important;
+    }
+}
+
+*/

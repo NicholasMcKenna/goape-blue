@@ -1,0 +1,30 @@
+@import 'custom';
+
+.eventsCalendar  {
+
+    .ui-datepicker, .ui-datepicker-calendar {
+        background: #d0d0d0;
+    }
+
+    .ui-datepicker-header {
+        background-color: @main-color;
+        border-radius: 0;
+        box-shadow: none;
+        color: @button-font-color;
+    }
+
+    .ui-datepicker th {
+        border: none;
+        border-bottom: 1px solid;
+    }
+
+    A.ui-state-default, .ui-widget-content A.ui-state-default {
+        background: none;
+        background-color: white;
+    
+        &:hover {
+            background-color: @button-color;
+            color:white;
+        }
+    }
+}

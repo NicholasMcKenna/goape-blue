@@ -1,0 +1,30 @@
+@import 'custom';
+
+.genresContainer {
+    padding-left: 1em;
+}
+
+.genres {
+    background-color: #d0d0d0;
+
+    .genre {
+        color: @main-color;
+        margin-left: 0;
+        width: 95%;
+
+        &:before, &:after {
+            content: none;
+        }
+    }    
+
+    h2 {
+        background-color: @main-color;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+.findByValues .genres .genre {
+    background-color: @main-color;
+    color: white;
+}

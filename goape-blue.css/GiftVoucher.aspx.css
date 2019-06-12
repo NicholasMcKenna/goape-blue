@@ -1,0 +1,161 @@
+.screen-GiftVoucher_aspx .general_caption::after {
+    background-image: none;
+    background-color: transparent;
+
+}
+
+.screen-GiftVoucher_aspx .general_caption {
+    background-color: transparent;
+    background-image: none;
+    border-left: none;
+    font-family: "Sheldon", sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    color: #033051;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.screen-content {
+    border: none;
+    background: none;
+}
+
+.ph_tunnellocation {
+    display: none;
+}
+
+.productInfo.item_data_background {
+    padding-left: 0;
+}
+.productInfo.item_data_background {
+    color: #114432;
+    font-size: 21px;
+}
+.productName {
+    color: inherit;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.productDescription {
+    font-size: 20px;
+}
+
+.screen-GiftVoucher_aspx .productInfo .small_text_a.property {
+    margin-bottom: .3em;
+    margin-left: 16px;
+    display: list-item;
+    font-size: 20px;
+}
+
+#lblTotal {
+    color: #033051;
+    font-weight: bold;
+    font-size: 21px;
+    margin-left: 1em;
+}
+
+.productInfo {
+    border: 1px #033051 solid;
+    border-width: 1px 0 0 0;
+}
+
+.button.small_button_a A::after, button.small_button_a::after {
+    content: none;
+}
+
+.button.small_button_a,
+.button.small_button_a:hover, 
+.button.small_button_a:focus, 
+.button.small_button_a:active {
+    font-family: "Sheldon", sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    color: #fff;
+    font-size: 22px;
+    box-shadow: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    border: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.button.small_button_a:hover, 
+.button.small_button_a:focus, 
+.button.small_button_a:active {
+    color: #00eaa7;
+    border-bottom: 2px solid #00eaa7;
+}
+
+.productName {
+    font-family: "Sheldon", sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    color: #033051;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.buttonsContainer {
+    border: 1px #033051 solid;
+    border-width: 1px 0 0 0;
+}
+
+/*
+.ui-spinner-button.ui-spinner-up, 
+.ui-spinner-button.ui-spinner-down {
+    background-image: none;
+}
+.ui-spinner.ui-widget {
+    padding-left: 0;
+    background-color: #fff;
+}
+
+.ui-icon-triangle-1-n, .ui-icon-triangle-1-s {
+    background-image: url(././UserContent/images/plus.png) !important;
+    background-size: 100%;
+    margin-top: -12px !important;
+    margin-left: -13px !important;
+    background-position: 0;
+}
+
+.ui-icon-triangle-1-s {
+    background-image: url(../../UserContent/images/minus.png) !important;
+}
+
+.ui-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.ui-button-icon-only .ui-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.ui-button-icon-only .ui-icon {
+    background-size: 100% !important;
+}
+
+a.ui-button.ui-widget.ui-spinner-button.ui-spinner-down.ui-corner-br.ui-button-icon-only {
+    float: left;
+    display: block;
+    right: initial;
+    left: 0;
+    border-right-style: solid;
+    border-bottom-right-radius: 0;
+}
+
+.numericSpinner.ui-spinner-input {
+    text-align: center;
+}
+
+FORM .ui-spinner {
+    height: 35px;
+}
+
+.numericSpinner.ui-spinner-input {
+    width: 60px;
+}
+*/

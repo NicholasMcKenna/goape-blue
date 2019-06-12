@@ -1,0 +1,83 @@
+.findByTitle {
+    display: none;
+}
+
+.searchManager .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    margin-top: 654px;
+}
+
+.searchManager .eventsCalendar .ui-datepicker, .searchManager .eventsCalendar .ui-datepicker-calendar {
+    background: #d0d0d0;
+}
+
+.searchManager .eventsCalendar .ui-datepicker th {
+    color: black;
+}
+
+.hasEvents a {
+    font-weight: bold!important;
+}
+
+@media only screen and (max-width:781px) {
+    .searchManager .eventsCalendar .ui-datepicker, .searchManager .eventsCalendar .ui-datepicker-calendar {
+        background: #dedede;
+    }
+    
+    .currentTimeRangeEventsCtrl .currentTimeRangeEvents, .currentTimeRangeEventsCtrl .currentTimeRangeEvents:active {
+        background-color: #559E27;
+        color: white;
+        text-align: center;
+    }
+    
+    .currentTimeRangeEventsCtrl {
+        padding-top: 24.5em;
+        color:white;
+    }
+    
+    .currentTimeRangeEventsCtrl:after,  {
+        color:white;
+    }
+    
+    .searchManager.expanded .findByOptions button.expanded .findByOptions .findByCalendar:before, .findByOptions button.expanded:after {
+        color: white;
+    }
+    
+    .searchManager.expanded .findByOptions button.expanded {
+        background-color: #559E27;
+        color:white;
+    }
+
+    .searchManager.expanded .findByOptions li:not(.expanded), .searchManager.expanded .findByOptions li.expanded, .searchManager.expanded .findByOptions li:not(.expanded) {
+        box-shadow: none!important;
+    }
+
+    .searchManager.expanded .findByOptions li:not(.expanded) {
+        -webkit-box-shadow: none!important;
+        -moz-box-shadow: none!important;
+        box-shadow: none!important;
+    }
+
+    .findByValues .genres { background-color: #cdcdcd!important; text-align: center;}
+
+    .findByValues .genres .genre {
+		font-size: 12px !important;
+		margin-left: 1%!important;
+		margin-right: 1%!important;
+    }
+
+    .findByValues .genres .genre {
+        width: auto!important;
+        background-color: #559E27!important;
+        color:white;
+        font-size: 15px!important;
+        padding: 8px!important;
+        line-height: 18px!important;
+        margin: 1%;
+    }
+/*
+    .screen-RecommendedShows_aspx #group_main .searchManager .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+        border: 0;
+    }
+*/
+} 
+

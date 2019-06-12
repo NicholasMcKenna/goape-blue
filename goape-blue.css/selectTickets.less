@@ -1,0 +1,59 @@
+#eventPage.non-seated .selectTickets .tickets, #eventPage.non-seated .selectTickets .summary {
+    margin-left: 0;
+    width: 100%;
+    padding-right: 1em;
+}
+
+@media only screen and (max-width: 780px) and (min-width: 1px) {
+    #eventPage.non-seated .selectTickets .summary {
+        background-color: transparent;
+    }
+
+    #eventPage .selectTickets .summary > SPAN.total {
+        padding-right: 3px!important;
+    }
+}
+
+
+
+.selectTickets .row .price, .selectTickets .row .ops, .selectTickets .row .extra-info {
+    margin-top: -5px;
+}
+
+#eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed > a {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed {
+    padding: 0;
+}
+
+.selectTickets .row .price, .selectTickets .row .ops, .selectTickets .row .extra-info {
+    margin-top: 2px;
+}
+
+#eventPage.seated .selectTickets {
+    background-image: none;
+    border-bottom-style: solid;
+}
+
+#eventPage.seated .selectTickets.empty .emptyMessage, #eventPage.seated #ticketsPane .selectTickets .buttonsContainer {
+    background-image: none;
+}
+
+.selectTickets .buttonsContainer .button > a {
+    padding: 2em;
+
+    @media only screen and (max-width: 780px) and (min-width: 1px) {
+        padding:1em;
+    }
+}
+
+#eventPage #ticketsPane .selectTickets .button.proceed {
+    @media only screen and (max-width: 780px) and (min-width: 1px) {
+        padding-right: 8%;
+    }
+}

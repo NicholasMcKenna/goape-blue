@@ -1,0 +1,497 @@
+@import 'custom';
+
+.carousel.recommendedShows .itemsList .dataItem, .carousel .itemsList .dataItem .button.small_button_a A, .carousel .itemsList .dataItem .button.small_button_a A:hover {
+    background-image: none;
+}
+
+span.occupancy {
+    display: none;
+}
+
+@media only screen and (max-width: 780px) and (min-width: 1px)
+{
+    .screen-content {
+        background-color: white;
+    }
+
+    #PH_Show_page > div.showDetails > div.showName > h1 {
+        padding-left: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .brief, .detailed {
+        padding-left: 12px;
+    }
+
+    #description > div.detailed > iframe {
+        max-width: 100%;
+    }
+
+    #eventslist {
+        .ShowEventsitemsList .itemsDateRange {
+            width: 5em;
+        }
+        
+        .ShowEventsitemsList .dataItem {
+            padding-left: 6em;
+        }
+        
+        .occupancy {
+            font-size: 12px;
+            height:auto;
+        }
+        
+        .itemsButtonsContainer {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: 10px;
+        }
+
+        span.small_text_d.name {
+            padding-left: 0px;
+        }
+
+        .ShowEventsitemsList .button.small_button_a A, .ShowEventsitemsList .button.small_button_a A:hover, .ShowEventsitemsList .button.small_button_a A:active, .ShowEventsitemsList .button.small_button_a A:focus {
+            background-image: none;
+            background-color: @button-color;
+            padding-left:9px;
+        }
+
+        > h2 {
+            display: none;
+        }
+        
+        #HelpDeskRequestPanel {
+            display: none;
+        }
+    }   
+
+    .carousel .itemsList .dataItem div.item_image {
+        height: auto;
+        width: 100%;
+        margin-top: 0;
+        max-width: 156px;
+        max-height: 118px;
+    }
+
+    .carousel .itemsList .dataItem .item_image IMG {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 110px;
+    }
+
+    .dateGroup {
+        margin-top: 0;
+    }
+
+    /* casa specific */
+    h3.dateGroup, .ShowEventsitemsList .dataItem .helpDeskRequestPanel { display: none; }
+
+    #eventslist .ShowEventsitemsList .dataItem { padding-left: 0; }
+    #eventslist .ShowEventsitemsList .itemsDateRange { width: 10em; }
+    
+    .ShowEventsitemsList .itemsDateRange {
+        left: 0;
+        top:0;
+    }
+
+    #eventslist .itemsButtonsContainer {
+        top: 0;
+        right: 0;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .ShowEventsitemsList .itemsDateRange SPAN {
+        color: black;
+        background-color: transparent;
+        text-align: left;
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #eventslist {
+        width: 100%;
+        padding: 0;
+    }
+
+    #HelpDeskRequestPanel ~ .ShowEventsitemsList .dataItem {
+        padding-bottom: 12px;
+        padding-left: 0;
+        margin-left: 0;
+        padding-top:50px;
+        border: 0;
+        border-bottom: 1px solid;
+    }
+
+    #eventslist {
+        background-color: transparent;
+    }
+
+    .ShowEventsitemsList .button.small_button_a A, #eventslist .ShowEventsitemsList .button.small_button_a A, #eventslist .ShowEventsitemsList .button.small_button_a A:hover {
+        width: 9em;
+        padding-bottom: 0.8em;
+        padding-top: 0.4em;
+    }
+
+    .occupancy {
+        background-size: auto 1.5em;
+    }
+
+    .ShowEventsitemsList .dataItem .extras {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 52px;
+    }
+
+    img.eventStatus, .innerdescription, .ShowEventsitemsList .dataItem .extras, span.previewFull, #PH_Show_page form.promoBox {
+        display: none;
+    }
+
+    .button.small_button_a.addToBasket.disabled>a {
+        background-color: #e6e6e6!important;
+        color: black;
+    }
+
+    #eventslist .ShowEventsitemsList .dataItem {
+        padding-left: 0;
+        padding-bottom: 12px!important;
+        margin-left: 0;
+        padding-top: 50px;
+        border: 0;
+        border-bottom: 1px solid;
+    }
+
+    #eventslist .ShowEventsitemsList .itemsDateRange {
+        font-weight: bold;
+    }
+
+    span.previewFull {
+        display: none!important;
+    }
+
+    #description .innerdescription {
+        display: block!important;
+    }
+
+    .carousel .itemsList .dataItem .name {
+        height: 3.7em;
+    }
+
+    #description > div.brief > p {
+        display: none;
+    }
+
+    .genresContainer {
+        display: none;
+    }
+	
+	.brief {
+		display: none;
+	}
+	
+	div#ctl00_body_RecommendedShows_CarouselContainer {
+		display: none;
+	}
+	
+	div.btmText > div {
+		top: 94px;
+	}
+	
+	.social {
+		position: absolute;
+		height: 34px;
+		width: 125px;
+		right: 0;
+		top: 33px;
+		margin-top: 15px;
+		text-align: right;
+	}
+			
+	.socialIcon {
+		display: inline;
+		margin-left: 10px;
+	}
+	
+	.socialIcon > a > img {
+		height: 22px;
+		width: auto;
+	}
+	
+	.button.small_button_a.addToBasket.disabled a, .button.small_button_a.addToBasket.disabled a:hover {
+		padding-bottom: 0!important;
+		padding-top: 0!important;
+	}
+
+	span.at-icon-wrapper {
+		background-color: transparent!important;
+	}
+
+	.addthis_toolbox a.at300b, .addthis_toolbox a.at300m {
+		height: 22px;
+		width: 22px;
+	}
+	
+	.socialIcon {
+		display: none;
+	}
+	
+	a.addthis_button_pinterest_share {
+		display: none;
+	}
+	
+	div#insta {
+		DISPLAY: INLINE;
+	}
+	
+	div#PH_Social_tools_bar {
+		display: inline;
+	}
+	
+	.addthis_toolbox.addthis_default_style.addthis_24x24_white_style {
+		display: inline;
+	}
+	
+	.socialTools-container {
+		display: inline;
+	}
+	
+	.addthis_default_style .addthis_separator, .addthis_default_style .at4-icon, .addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300bs, .addthis_default_style .at300m {
+		float: right!important;
+	}
+	
+	.socialTools-container span.at-icon-wrapper {
+		height: 18px!important;
+		width: 18px!important;
+	}
+	
+	.addthis_toolbox.addthis_default_style.addthis_24x24_white_style > a {
+		margin-left: 10px;
+    }
+
+    .ShowEventsitemsList .dataItem .helpDeskRequestPanel {
+        position: static;
+    }
+
+    .ShowEventsitemsList .dataItem .helpDeskRequestPanel {
+        display: block;
+        margin-right: 0;
+    }
+
+    .ShowEventsitemsList .dataItem .helpDeskRequest-88000000-0000-0000-0000-000000000002 A {
+        background-color: transparent;
+        box-shadow: none;
+        color: black;
+        font-weight: bold;
+        /* text-align: left; */
+        padding-bottom: 2px;
+        border: 1px solid;
+    }
+    .ShowEventsitemsList .dataItem .highlight {
+        width: 109px;
+    }
+
+    .itemsDataContainer {
+        /* display: inline-block!important; */
+        max-width: 10em;
+    }
+
+    #eventslist .ShowEventsitemsList .dataItem {
+        padding-bottom: 28px !important;
+        padding-top: 21px;
+    }
+    .ShowEventsitemsList .button.small_button_a A, #eventslist .ShowEventsitemsList .button.small_button_a A, #eventslist .ShowEventsitemsList .button.small_button_a A:hover {
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+}
+
+.carousel .button.small_button_a {
+    background: none; 
+    border-bottom: none; 
+    box-shadow: none; 
+    transition: none; 
+}
+
+.carousel .itemsList .dataItem .button.small_button_a A, .carousel .itemsList .dataItem .button.small_button_a A:hover {
+    color: white;
+    background-color: #0064ff;
+}
+@media @desktop {
+    .carousel .item_image {
+
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+.ShowEventsitemsList .button.small_button_a A, .ShowEventsitemsList .button.small_button_a A:hover, .ShowEventsitemsList .button.small_button_a A:active, .ShowEventsitemsList .button.small_button_a A:focus {
+    @media @desktop {
+        padding:2em;
+    }
+}
+
+
+.ShowEventsitemsList {
+    @media @mobile {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+}
+
+@media @desktop {
+
+    .ShowEventsitemsList .dataItem .highlight A {
+        padding: 2.5em;
+        height: auto;
+    }
+
+    .largeImageContainer {
+        max-height: 456px;
+    }
+    
+    #description, #eventslist {
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .ShowEventsitemsList .dataItem {
+        padding-left: 15em;
+        min-height: 89px;
+    }
+
+    .ShowEventsitemsList .itemsDateRange {
+        width: 14em;
+    }
+
+    .ShowEventsitemsList .itemsButtonsContainer {
+        position: absolute;
+        right: 0;
+        top: 8px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel .dataItem > .item_image_container:first-child {
+        height: 100%;
+        width: 100%;
+    }
+
+    .carousel .itemsList .dataItem {
+        height: 250px;
+        width: 250px;
+    }
+
+    .ShowEventsitemsList .itemsDateRange {
+        width: 14em;
+      }
+
+    .carousel .item_image {
+        max-width: 250px;
+        max-height: 210px;
+    }
+
+    span.small_text_d.name:after {
+        content: ' ';
+        white-space: pre;
+    }
+
+    .carousel .itemsList .dataItem .itemsDataContainer .name, .carousel .itemsList .dataItem .itemsDataContainer .description {
+        background: #232927;
+        color: white;
+        text-align: right;
+        max-width:252px;
+    }
+
+    .carousel .itemsList .dataItem .name {
+        min-height: 48px;
+    }
+
+    .carousel .listContainer {
+        width: calc(100% - 42px);
+    }
+
+    #eventslist {
+        background-color: white;
+    }
+
+    .ShowEventsitemsList .dataItem {
+        border: none;
+        border-top: 1px dashed grey;
+    }
+
+    form.promoBox {
+        display: none;
+    }
+
+    .genresContainer {
+        display: none;
+    }
+
+    .ShowEventsitemsList .dataItem .highlight A {
+    }
+
+    .ShowEventsitemsList .dataItem .helpDeskRequestPanel {
+        right: 10.5em;
+        bottom: -0.42em;
+    }
+
+    .ShowEventsitemsList .itemsButtonsContainer .button.disabled A, 
+    .ShowEventsitemsList .itemsButtonsContainer .button.disabled:hover,
+    .ShowEventsitemsList .itemsButtonsContainer .button.disabled A:hover {
+        color: #232323;
+        line-height: 24px;
+        background: #e6e4e4;
+        box-shadow:none;
+        text-transform: uppercase;
+    }
+
+    .carousel .itemsList .dataItem .itemsDataContainer {
+        background-color: transparent;
+    }
+    
+    .carousel .itemsList .dataItem.simulateHover .itemsDataContainer .description {
+        display: none;
+    }
+    
+    .carousel .itemsList .dataItem:hover .itemsButtonsContainer,
+    .carousel .itemsList .dataItem.simulateHover .itemsButtonsContainer,
+    .carousel .itemsList .dataItem:hover .itemsDateRange,
+    .carousel .itemsList .dataItem.simulateHover .itemsDateRange {
+      display: none;
+    }
+
+    .carousel .itemsList .dataItem .itemsDataContainer .description {
+        display: none;
+    }
+
+    .ui-tooltip .ui-corner-all .ui-widget-shadow .ui-widget .ui-widget-content {
+        display: none;
+    }
+
+    .ShowEventsitemsList .dataItem {
+        min-height: 96px;
+    }
+
+    div#paymentMethodForms {
+        display: none!important;
+    }
+    
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    .ShowEventsitemsList .dataItem .highlight a {
+        padding:1.8em;
+    }
+ }
+

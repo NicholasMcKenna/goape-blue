@@ -1,0 +1,122 @@
+@import 'custom';
+
+.imageSettings {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.mobileButton {
+    width: 100%;
+    height: 43px;
+    margin-top: 1px;
+}
+
+.occupancyStatus.ng-binding {
+    padding-top: 10px;
+}
+
+.searchHeader {
+    text-align: center;
+    background-color: white;
+}
+
+.searchResult {  
+    background-color: transparent;
+    margin-top: 0;
+
+    .itemsList {
+        background-color: transparent;
+        margin-top: 0;
+
+        .dataItem {
+            &:hover {
+                IMG, .item_image IMG {
+                    @media @desktop { .imageSettings; }
+                }
+
+                .itemsDataContainer {
+                    @media @desktop { width: 38%; }
+                    @media @mobile {
+                        .button.small_button_a.addToBasket {
+                            .mobileButton;
+                        }
+                    }
+                }
+
+                .itemsButtonsContainer .button.small_button_a.addToBasket {
+                    @media @mobile {
+                        .mobileButton;
+                    }
+                }
+            }
+
+            .button.small_button_a A, .button.small_button_a A:hover {
+                .buttonSize;
+                .buttonBoxShadow;
+            }
+
+            .itemsButtonsContainer .button.small_button_a.addToBasket {
+                @media @mobile {
+                    .mobileButton;
+                }
+            }
+
+            .itemsDataContainer {
+                @media @desktop { 
+                    width: 38%; 
+
+                }
+                                
+                .description {
+                    word-break: break-word;
+                    @media @desktop {
+                        padding-top: 10px;
+                    }
+                }
+            }
+
+            span.previewFull {
+                display: none;
+            }
+
+            .innerdescription {
+                display: block;
+            }
+
+            DIV.item_image {
+                background-image: none;
+
+                @media @desktop {
+                    width: 147px;
+                    height: auto;
+                }
+
+                IMG {
+                    @media @desktop { .imageSettings; }
+                }
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .searchResult .itemsList .dataItem .button.small_button_a A, .searchResult .itemsList .dataItem .button.small_button_a A:hover {
+        padding-left: 0;
+        box-shadow: none;
+    }
+    
+    .searchResult .itemsList .dataItem .button.small_button_a A:hover, .searchResult .itemsList .dataItem .button.small_button_a A:hover:hover {
+        box-shadow: none;
+    }
+}
+
+span.occupancy {
+    display: none;
+}
+
+
+#loginCtrlContainer .errorMessage {
+    width: 65%;
+}

@@ -1,0 +1,25 @@
+@import 'custom';
+
+.promoBox {
+    padding: 0.5em;
+    border: 1px solid;
+
+    &:before {
+        content:none;
+    }
+
+    input + button {
+        background-color: @button-color;
+
+        &:hover {
+            .buttonHover;
+        }
+    }
+
+    label {
+        @media @mobile {
+            font-size: 0.7em;
+            min-width: 6em;
+        }
+    }
+}

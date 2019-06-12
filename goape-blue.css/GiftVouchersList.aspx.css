@@ -1,0 +1,295 @@
+.itemsList .dataItem {
+    height: 40em;
+    padding: 0;
+}
+
+.itemsList .dataItem .item_image_container {
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+}
+
+.itemsList .dataItem .item_image_container div.item_image {
+    padding-top: 0;
+    height: 100%;
+}
+
+.ph_gift_vouchers_list .itemsList .dataItem div.item_image img {
+    margin-top: 0;
+    max-width: 100%;
+    max-height: 275px;
+}
+
+/*
+body .itemsList .dataItem:nth-child(2n+2) {
+    margin-right: 0;
+}
+*/
+
+.screen-giftvoucherslist_aspx .itemsList .dataItem {
+    border: none;
+    margin: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dataItem .previewFull {
+    display: none;
+}
+
+.innerdescription {
+    display: block;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 780px) {
+    .itemsList .dataItem .item_image_container,
+    .dataItem.item_background.item_data_background>a {
+        width: 100%;
+    }
+    .itemsList .dataItem>* {
+        height: 7em;
+    }
+}
+
+.screen-giftvoucherslist_aspx .dataItem .name {
+    color: #033051;
+    font-size: 25px;
+}
+
+.itemsList .dataItem>* {
+    width: 100%;
+}
+
+.itemsList .dataItem .description {
+    max-height: 4em;
+    height: 126px;
+    margin-top: 20px;
+    display: none;
+}
+
+.innerdescription {
+    display: block;
+    font-family: "VAG", arial, sans-serif;
+    font-size: 15px;
+}
+
+.itemsDataContainer {
+    padding-top: 10px;
+}
+
+img.small_arrow_1_right {
+    display: none !important;
+}
+
+.button.small_button_a a,
+button.small_button_a,
+.button.small_button_a a:hover,
+button.small_button_a:hover,
+.button.small_button_a a:focus,
+button.small_button_a:focus,
+.button.small_button_a a:active,
+button.small_button_a:active {
+    background: #033051;
+    border-bottom: solid #033051;
+    font-size: 20px;
+    box-shadow: none !important;
+}
+
+.button.small_button_a,
+.button.small button_a:hover {
+    color: #fff;
+    font-size: 20px;
+    background: #033051;
+    box-shadow: none !important;
+    transition: none;
+}
+
+.button.small_button_a a,
+button.small_button_a,
+.button.small_button_a a:hover,
+button.small_button_a:hover,
+.button.small_button_a a:focus,
+button.small_button_a:focus,
+.button.small_button_a a:active,
+button.small_button_a:active {
+    border-bottom: none;
+}
+
+.itemsList .itemsButtonsContainer .button.moreInfo {
+    min-height: 30px;
+    width: unset;
+    display: inline-block;
+}
+
+.itemsList .itemsButtonsContainer .button {
+    float: none;
+}
+
+.button.small_button_a.addToBasket {
+    float: right;
+    border: 2px solid #033051;
+    border-radius: 0;
+}
+.button.small_button_a.addToBasket {
+    font-family: "Sheldon", sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+@media only screen and (min-width: 781px) {
+    .button.small_button_a.addToBasket {
+        width: 100%;
+        margin-top: 60px;
+        float: left;
+    }
+
+    .button.small_button_a a, button.small_button_a, .button.small_button_a a:hover, button.small_button_a:hover, .button.small_button_a a:focus, button.small_button_a:focus, .button.small_button_a a:active, button.small_button_a:active {
+        padding: 10px 0;
+        width: 100%; 
+    }
+
+    .button.small_button_a a:hover, button.small_button_a:hover, .button.small_button_a a:focus, button.small_button_a:focus, .button.small_button_a a:active, button.small_button_a:active {
+        border: none;
+    }
+}
+
+.button.small_button_a.addToBasket:hover {
+    border: 2px solid #00eaa7;
+}
+
+.itemsList .itemsButtonsContainer .button.moreInfo a {
+    padding: .6em .5em !important;
+    border: 1px solid;
+    font-size: 20px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.itemsButtonsContainer {
+    width: 98% !important;
+    margin: 0 auto;
+}
+
+.itemsList .itemsButtonsContainer .button.moreInfo a {
+    color: #033051;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 780px) {
+    .itemsList .itemsDataContainer {
+        height: 19em;
+        padding-top: 0;
+    }
+    .itemsList .dataItem .description {
+        height: 57px;
+    }
+    .small_text_b.extras {
+        display: none;
+    }
+    .slick-slider {
+        width: 82%;
+        margin: 0 auto;
+    }
+    .screen-giftvoucherslist_aspx .itemsList .dataItem {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .itemsList .dataItem {
+        height: auto;
+    }
+    .itemsList .itemsButtonsContainer .button.addToBasket a {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .button.small_button_a.addToBasket {
+        float: left;
+    }
+    .itemsList .itemsButtonsContainer .button.moreInfo a {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        text-decoration: none;
+        color: #033051;
+    }
+    .itemsList .itemsButtonsContainer .button.moreInfo {
+        width: 100%;
+        padding-bottom: 6px;
+
+    } 
+}
+
+@media only screen and (min-width: 781px) {
+    .itemsDataContainer {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .itemsList .dataItem>* {
+        float: unset;
+    }
+
+    .itemsButtonsContainer {
+        max-width: 400px;
+        margin: 0 auto !important;
+    }
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #033051 !important;
+}
+
+.itemsList .itemsButtonsContainer .button.moreInfo {
+    display: none;
+}
+
+
+/* no scroll gv */
+@media only screen and (min-width: 781px) {
+    .itemsList .dataItem {
+        width: 29%;
+        height: 27em;
+        margin-bottom: 100px !important;
+    }
+
+    .itemsDataContainer {
+        max-height: 218px;
+    }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 1px) {
+    .itemsList .dataItem {
+        height: 28em;
+        width: 100%;
+    }
+
+    .itemsList .dataItem .description {
+        max-height: 5em;
+    }
+
+    .itemsList .itemsDataContainer {
+        height: 3em;
+    }
+}
+
+.info-container {
+    padding: 0 15px 15px 15px;
+}
+
+h2 {
+    font-family: "Sheldon", sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    color: #033051;
+    font-size: 38px;
+    margin: 15px 0px;
+}
+
+.gift-info {
+    font-size: 16px;
+    color: #033051;
+}

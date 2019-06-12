@@ -1,0 +1,34 @@
+@import 'custom';
+
+.itemsList .dataItem:hover .itemsDataContainer, .itemsList .dataItem>a:focus .itemsDataContainer {
+    background-color: @button-color;
+}
+
+.itemsList .dataItem div.item_image.missing, .itemsList .dataItem div.item_image:empty {
+    background: none;
+}
+
+.dataItem .name {
+    color: @main-font-color;
+}
+
+.merchandiseFilterContainer {
+    background-color: #fff;
+    padding-left: 0;
+}
+
+.screen-content>h1 {
+    background: #e96d1f;
+    color: white;
+}
+
+.merchandiseFilterContainer .attributesContainer>div>span,
+.merchandiseFilterContainer .filterSection>span {
+    background-color: @button-color;
+    color: white;
+    padding-left: 5px;
+}
+
+.merchandiseFilterContainer .priceRangeContainer .ui-rangeSlider .ui-rangeSlider-container .ui-rangeSlider-handle {
+    background-color: #114432;
+}

@@ -1,0 +1,84 @@
+#leftMenu > UL > LI.ui-state-active {
+    border-bottom: 1px solid #005833;
+}
+
+#leftMenu > UL > LI.ui-state-active A {
+    color: #005833;
+}
+
+.crmWelcomeColumnContainer > DIV > H2::before {
+    color: #005833;
+}
+
+.welcomeContentLinks A, .welcomeContentLinks A:hover, .welcomeContentLinks A:active, .welcomeContentLinks A:focus, #crmMyProfileContent.welcomeContent .toolbar A, #crmMyProfileContent.welcomeContent .toolbar A:hover, #crmMyProfileContent.welcomeContent .toolbar A:active, #crmMyProfileContent.welcomeContent .toolbar A:focus, #crmFriendsAndRelatives A, .crm_screen_container .toolbar A {
+    color: #005833;
+    font-weight: normal;
+}
+
+
+#crmFriendsAndRelativesContent {
+    border-bottom: 1px solid #005833;
+}
+
+#crmSubscriptions > H2, #crmFriendsAndRelatives > H2 {
+    background-image: none;
+}
+
+.welcomeContentLinks, #crmMyProfileContent.welcomeContent .toolbar {
+    border-top-color: #005833;
+}
+
+div#historyContainer {
+    display: none;
+}
+
+div#crmFriendsAndRelatives {
+    display: none;
+}
+
+@media only screen and (min-width: 781px) {
+    .spScreen .row .field INPUT[type='text'] {
+        min-width: 227px;
+    }
+}
+
+.field .commands button > span {
+    display: block;
+    padding: 9px;
+    position: static;
+    background: #337157;
+    color: white;
+}
+
+#frmDlg div.row.TextBox.HomeZipCode > div.field > span > button > img {
+    display: none;
+}
+
+.field .commands button {
+    height: 2.5em;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 780px) {
+    FIELDSET .row .field {
+        white-space: normal;
+    }
+}
+
+#frmDlg > div > div > fieldset > div > div.row.Label.WorkPlace > div.label {
+    width: 436px;
+    padding-bottom: 10px;
+}
+
+.spScreen .row.MultiSelectionList > .field UL LI .field UL LI {
+    display: inline;
+    padding-right: 19px;
+}
+
+.crm_screen_container .toolbar A SPAN {
+    padding: 0 0.2em;
+    font-size: 1.5em;
+}
+
+.crm_screen_container THEAD TR {
+    text-align: left;
+}
