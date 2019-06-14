@@ -7,7 +7,7 @@
 }
 
 .crmWelcomeColumnContainer > DIV > H2::before {
-    color: #005833;
+    color: blue;
 }
 
 .welcomeContentLinks A, .welcomeContentLinks A:hover, .welcomeContentLinks A:active, .welcomeContentLinks A:focus, #crmMyProfileContent.welcomeContent .toolbar A, #crmMyProfileContent.welcomeContent .toolbar A:hover, #crmMyProfileContent.welcomeContent .toolbar A:active, #crmMyProfileContent.welcomeContent .toolbar A:focus, #crmFriendsAndRelatives A, .crm_screen_container .toolbar A {
